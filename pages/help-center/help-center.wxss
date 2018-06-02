@@ -1,0 +1,23 @@
+/* pages/help-center/help-center.wxss */
+.help-cont{
+   border-top: 1px solid #b3b3b3;
+}
+.help-view{
+  width: 100%;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 40rpx 0rpx;
+}
+.help-tit{
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 0 30rpx;
+  text-align: justify
+}
+.help-text{
+   display: block;
+   padding: 20rpx 30rpx;
+   line-height: 40rpx;
+   font-size: 28rpx;
+   text-align: justify;
+}

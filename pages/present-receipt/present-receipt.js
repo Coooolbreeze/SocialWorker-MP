@@ -1,0 +1,23 @@
+// pages/present-receipt/present-receipt.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  onApplyequipTap: function () {
+    wx.switchTab({
+      url: '/pages/personal-center/personal-center'
+    })
+  }
+})

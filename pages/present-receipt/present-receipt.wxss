@@ -1,0 +1,2 @@
+/* pages/present-receipt/present-receipt.wxss */
+@import "../apply-receipt/apply-receipt.wxss"

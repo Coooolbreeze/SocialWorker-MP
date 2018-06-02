@@ -1,0 +1,9 @@
+<!--pages/friend-list/friend-list.wxml-->
+<view class='container'>
+  <view class='friend-main'>
+    <view class='friend-view' wx:for="{{users}}" wx:key="{{item.id}}">
+      <image src='{{item.avatar}}'></image>
+      <text>{{item.nickname}}</text>
+    </view>
+  </view>
+</view>

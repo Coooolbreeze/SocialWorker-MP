@@ -1,0 +1,40 @@
+<!--pages/apply-equipment/apply-equipment.wxml-->
+<view class='container'>
+  <!-- <checkbox-group bindchange="serviceValChange">
+    <view class="service_selection flex">
+      <block wx:for="{{allGoodsFilte}}" wx:key="{{item.id}}">
+        <view class="item">
+          <label class="checkbox {{item.checked?'is_checked':''}}">
+            <checkbox value="{{item.id}}" checked="{{item.checked}}" hidden="false" />
+            <view class="title">{{item.name}}</view>
+            <view class='price'>￥{{item.price}}</view>
+          </label>
+        </view>
+      </block>
+    </view>
+  </checkbox-group> -->
+
+
+
+  <checkbox-group bindchange="serviceValChange">
+    <view class="service_selection flex">
+      <block wx:for="{{allGoodsFilte}}" wx:key="{{item.id}}">
+        <view class="item">
+          <label class="checkbox {{item.checked?'is_checked':''}}">
+            <checkbox value="{{item.id}}" checked="{{item.checked}}" hidden="false" />
+            <image src='/images/sb-pic01.png' class='sb-pic01'></image>
+          </label>
+          <image hidden='{{!item.checked}}' class='suc' bindtap='onquxiao' data-index='{{index}}' src='/images/suc.png'></image>
+          <view class='name-txt'>
+            {{item.name}}
+            <text class='red-col'>{{item.price}}</text>元
+          </view>
+        </view>
+      </block>
+    </view>
+  </checkbox-group>
+  <view class='apply-bottom'>
+    <view class='zc-btn' bindtap='onPublicpayTap'>众筹保证金</view>
+    <view class='pay-btn' bindtap='onPayTap'>支付保证金</view>
+  </view>
+</view>

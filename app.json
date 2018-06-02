@@ -1,0 +1,88 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/selection-label5/selection-label5",
+    "pages/selection-label4/selection-label4",
+    "pages/selection-label3/selection-label3",
+    "pages/selection-label2/selection-label2",
+    "pages/apply-equipment/apply-equipment",
+    "pages/friend-invit/friend-invit",
+    "pages/personal-info/personal-info",
+    "pages/confirm-apply/confirm-apply",
+   
+   
+   
+    "pages/public-list/public-list",
+    
+    "pages/selection-label/selection-label",
+ 
+   
+    "pages/team/team",
+    "pages/personal-center/personal-center",
+    "pages/friends-circle/friends-circle",
+    "pages/login/login",
+    "pages/device-management/device-management",
+    "pages/redemption-list/redemption-list",
+   
+    "pages/product-details/product-details",
+    "pages/confirm-order/confirm-order",
+    "pages/use-protocol/use-protocol",
+    "pages/raise-friends/raise-friends",
+    "pages/public-share/public-share",
+    "pages/public-share-friend/public-share-friend",
+    "pages/team-code/team-code",
+    "pages/social-work/social-work",
+    "pages/social-descrip/social-descrip",
+    "pages/help-center/help-center",
+    "pages/choose-service/choose-service",
+    
+    "pages/apply-present/apply-present",
+    "pages/present-receipt/present-receipt",
+    "pages/blood-info/blood-info",
+    
+    "pages/apply-receipt/apply-receipt",
+    "pages/guarantee-index/guarantee-index",
+    "pages/about/about",
+    "pages/caring-public/caring-public",
+    "pages/receivable-info/receivable-info",
+    "pages/service-description/service-description",
+    "pages/friend-list/friend-list",
+    "pages/group-desc/group-desc",
+    
+    "pages/health-assess/health-assess",
+    "pages/service-list/service-list",
+    "pages/health-records/health-records",
+    "pages/health-center/health-center"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "健康小店",
+        "iconPath": "/images/nav01.png",
+        "selectedIconPath": "/images/nav-icon01.png"
+      },
+      {
+        "pagePath": "pages/team/team",
+        "text": "互助小组",
+        "iconPath": "/images/nav02.png",
+        "selectedIconPath": "/images/nav-icon02.png"
+      },
+      {
+        "pagePath": "pages/personal-center/personal-center",
+        "text": "个人中心",
+        "iconPath": "/images/nav03.png",
+        "selectedIconPath": "/images/nav-icon03.png"
+      }
+    ]
+  }
+}

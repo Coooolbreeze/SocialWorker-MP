@@ -1,0 +1,26 @@
+/* pages/apply-receipt/apply-receipt.wxss */
+.receipt-cont{
+  padding-top: 70rpx;
+  text-align: center;
+  border-top: 1px solid #b3b3b3;
+}
+.receipt-cont image{
+ width: 200rpx;
+ height: 200rpx;
+ margin: 0 auto;
+ display: block;
+ margin-bottom: 20rpx;
+}
+.receipt-cont text{
+  font-size: 28rpx;
+}
+.receipt-cont button{
+  width: 630rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: white;
+  margin-top: 80rpx;
+  background: #f7931e;
+   font-size: 32rpx;
+}

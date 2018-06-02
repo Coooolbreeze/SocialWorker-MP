@@ -1,0 +1,37 @@
+<!--pages/raise-friends/raise-friends.wxml-->
+<view class='invit-contanier'>
+  <image src='/images/xy-icon.png' class='xy-icon'></image>
+  <text class='blood-txt'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天血压”公益行动将为每一个领取智能血压计
+成功上传数据的用户每天补贴1元钱！</text>
+  <view>
+    <view class='blood-view   raise-view'>
+      <view>
+        <image src='{{info.user.avatar}}' class='head-pic'></image>
+        <view class='blood-name'>{{info.user.nickname}}</view>
+      </view>
+      <view class='line-b'></view>
+      <text class='blood-txt3'>
+我已申请加入“天天血压”公益行动
+领取智能血压计，为健康代言
+承诺为家人和朋友监测血压动态数据
+邀请你为我担保
+你和家人的健康，我们共同关注
+</text>
+      <text class='line-b'></text>
+
+      <view class='head-view'>
+        <image wx:for="{{info.guarantee}}" wx:key="{{item.id}}" src='{{item.user.avatar}}' class='headpic'></image>
+        <image wx:if="{{info.guarantee_count > 6}}" src='/images/yuan.png' class='headpic'></image>
+        <view>
+          <text>已经有<text class='col1'>{{info.guarantee_count}}</text>人为
+          <text class='col2'>{{info.user.nickname}}</text>提供设备使用担保</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button wx:if="{{isPaid}}" class='guarantee-btn' style='background-color: #cccccc'>你已经支付过了哦</button>
+  <button wx:elif="{{info.surplus < 2.9}}" class='guarantee-btn' style='background-color: #cccccc'>你来晚了哦</button>
+  <button wx:else bindtap='toPay' class='guarantee-btn'>同意担保,替Ta支付2.9元保证金</button>
+</view>

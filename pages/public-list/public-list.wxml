@@ -1,0 +1,13 @@
+<!--pages/public-list/public-list.wxml-->
+<view class='dev-container-t top-bm'>
+  <text class='dev-title'>申请列表：</text>
+
+  <view class='device-view' wx:for="{{list}}" wx:key="{{item.id}}">
+    <view class='device-txt'>
+      <text class='dev-name dev-name2'>{{item.products[0].name}}</text>
+    </view>
+    <button class='dev-btn-s' bindtap="unbind">查看</button>
+  </view>
+
+  <text class='apply-text' bindtap='ondeviceTap'>还没有设备？立即申请</text>
+</view>

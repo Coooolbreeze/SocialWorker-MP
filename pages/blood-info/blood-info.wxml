@@ -1,0 +1,10 @@
+<!--pages/blood-info/blood-info.wxml-->
+<view class='info-container'>
+  <view class='info-cont'>
+    <text>高压</text>
+    <input bindinput='onHighpressureTap' class="name" name="name" placeholder="请输入高压" />
+    <text>低压</text>
+    <input bindinput='onLowpressureTap' class="name" name="phone" placeholder="请输入低压" />
+  </view>
+  <view class='preser-btn' bindtap='onServicelistTap'>提交结果</view>
+</view>

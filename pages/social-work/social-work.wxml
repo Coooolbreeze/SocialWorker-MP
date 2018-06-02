@@ -1,0 +1,39 @@
+<!--pages/social-work/social-work.wxml-->
+<view class='social-container'>
+  <view class='social-view'>
+    <view>
+      <text class='social-tit'> 我的社工券</text>
+      <image class='pro-icon' src='/images/pro-icon.jpg' bindtap='onSocialdescripTap'></image>
+      <view class=''>
+        <text class='social-price'>{{asset.total}}</text>
+        <text class='social-name'>社工券</text>
+        <view class='price-view'>
+          冻结
+          <text>{{asset.disabled}}</text> / 可用
+          <text>{{asset.available}}</text>
+        </view>
+        <view class='tx-view' bindtap='onApplypresentTap'>
+          <text>提现</text>
+          <image class='ri-icon' src='/images/ri-icon.jpg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <view class='nav'>
+      <view class="{{incomeActive?'orange':'default'}}" bindtap='onIncomeTap'>收入列表</view>
+      <view class='lines'></view>
+      <view class="{{incomeActive?'default':'orange'}}" bindtap='onCashesTap'>提现列表</view>
+    </view>
+    <block wx:for="{{incomeActive ? asset.incomes : asset.cashes}}" wx:key="{{item.id}}">
+      <view class='shour-view'>
+        <view>
+          <text class='equipemnt-name'>{{item.type}}</text>
+          <text class='time'>{{item.created_at}}</text>
+        </view>
+        <text class='price'>{{item.number}}</text>
+      </view>
+    </block>
+  </view>
+</view>

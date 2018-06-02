@@ -1,0 +1,48 @@
+<!--pages/apply-present/apply-present.wxml-->
+<view class='info-container'>
+  <view class='info-cont present-cont'>
+    <text>收款人</text>
+    <view class='present-name' bindtap='onReceivableinfoTap'>
+      <text>{{receivable.name || ''}}</text>
+      <image class='line-pic' src='/images/line-ri.png'></image>
+    </view>
+    <text>提现金额</text>
+    <input bindinput='onCashInput' class="name" name="phone" maxlength="{{asset.length}}" placeholder="请输入..." />
+  </view>
+  <view class='present-pay'>
+    当前可提现的金额
+    <text>￥{{asset}}</text>
+  </view>
+
+  <view class='whithhold-main'>
+    <view class='withhold'>
+      <text>代扣个税</text>
+      <view>￥
+        <text>{{tax}}</text>
+      </view>
+
+    </view>
+    <view class='pay-zong'>
+      <text>最终到账</text>
+      <view>￥
+        <text>{{final}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view>
+
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for-items="{{items}}">
+        <checkbox style="transform:scale(.7)" value="{{item.name}}" checked="{{item.checked}}" />我已同意
+        <text bindtap='useProtocol' class='checks'>《安新社工之家社工券使用协议》</text>
+      </label>
+    </checkbox-group>
+  </view>
+  <button class='present-btn' bindtap='onPresentreceiptTap'>提交申请</button>
+  <view class='presents-text'>
+    <text class='tishi'>提示:</text>
+    <text>1.提现金额超过账户余额时，点击“提交申请”弹窗提示：您的可提现金额不足，请重新调整提现金额
+2.当未超过账户余额时，点击“提交申请”跳转申请回执</text>
+  </view>
+</view>

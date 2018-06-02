@@ -1,0 +1,36 @@
+<!--pages/personal-center/personal-center.wxml-->
+<view class='container'>
+  <view class='center-head'>
+    <view class='head-pic'>
+      <open-data type="userAvatarUrl" class="avatarimg"></open-data>
+    </view>
+    <open-data type="userNickName" class="userName"></open-data>
+  </view>
+
+  <view class='center-mid'>
+    <view class='sociology'>
+      <image src='/images/center-icon1.png' bindtap='onSocialTap'></image>社工券
+    </view>
+    <view class='border-ri'></view>
+    <view class='sociology' bindtap='onHealthTap'>
+      <image src='/images/center-icon3.png'></image>互助服务
+    </view>
+    <view class='border-ri'></view>
+    <view class='sociology' bindtap='onHealthasseTap'>
+      <image src='/images/center-icon2.png'></image>健康档案
+    </view>
+  </view>
+
+  <view class='help' bindtap='onHelpTap'>帮助中心
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+  <view class='care' bindtap='onCarepublicTap'>天天关爱公益计划
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+  <view class='about' bindtap='onAboutTap'>关于
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+</view>

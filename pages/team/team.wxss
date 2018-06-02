@@ -1,0 +1,108 @@
+/* pages/team/team.wxss */
+
+.container {
+  background: #f2f2f2;
+  height: auto;
+}
+
+.team-view {
+  width: 100%;
+  height: 366rpx;
+  text-align: center;
+  border-top: 1px solid #b3b3b3;
+  margin-bottom: 20rpx;
+  background: white;
+}
+
+.team-code {
+  width: 240rpx;
+  height: 240rpx;
+  margin-top: 30rpx;
+}
+
+.team-text {
+  display: block;
+  margin-top: 10rpx;
+}
+
+.team-mid {
+  width: 100%;
+  height: 170rpx;
+  margin-bottom: 20rpx;
+  background: white;
+  padding-top: 25rpx;
+}
+
+.team-tit {
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+
+.team-head {
+  display: flex;
+  flex-direction: row;
+  padding: 25rpx 30rpx 0 40rpx;
+  position: relative
+}
+
+.head-pic {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-left: -25rpx;
+  border: 2px solid #fff;
+}
+
+.line-ri {
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 25rpx;
+  
+}
+.team-bottom{
+  width: 100%;
+font-size:32rpx;
+
+}
+
+.share-friend {
+  height: 100rpx;
+  line-height: 100rpx;
+  background: white;
+   padding: 0 30rpx; 
+  border-bottom: 1px solid #b3b3b3;
+  position: relative
+}
+
+.share-friend image {
+  width: 20rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 45rpx;
+}
+
+.share-quan {
+  height: 110rpx;
+  line-height: 110rpx;
+  background: white;
+  padding: 0 30rpx; 
+  position: relative
+}
+.share-quan image {
+  width: 20rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 45rpx;
+}
+.tema-text{
+  height: 250rpx;
+  color: #4db5f0;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+   padding: 20rpx 0; 
+}

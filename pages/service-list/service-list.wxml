@@ -1,0 +1,32 @@
+<!--pages/service-list/service-list.wxml-->
+<view>
+  <view>
+    <view class='nav'>
+      <view class="{{commingActive?'orange':'default'}}" bindtap='onCommingTap'>进行中</view>
+      <view class='lines'></view>
+      <view class="{{commingActive?'default':'orange'}}" bindtap='onCompleteTap'>已完成</view>
+    </view>
+    <block wx:for="{{showServices}}" wx:key="{{item.id}}">
+      <view class='record-list ser-bg'>
+        <view class='record-cont'>
+          <text class='record-tit'>{{item.service.name}}</text>
+          <text class='record-date'>{{item.created_at}}</text>
+          <view class='record-msg'>
+            检查人：
+            <text class=''>{{item.user.nickname}}</text>
+          </view>
+          <view class='record-msg'>
+            检查金额：
+            <text>￥{{item.price}}</text>
+          </view>
+          <view class='record-msg' wx:if="{{item.status == '已完成'}}">
+            检查结果：
+            <text>{{item.detection_result}}</text>
+          </view>
+          <button wx:if="{{item.status == '现金支付'}}" class='service-btn' data-id="{{item.id}}" bindtap='onSureTap'>确认收款</button>
+          <button wx:if="{{item.status == '已收款'}}" class='service-btn' data-id="{{item.id}}" bindtap='onBloodTap'>录入结果</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

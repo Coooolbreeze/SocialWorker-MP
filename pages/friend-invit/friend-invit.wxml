@@ -1,0 +1,38 @@
+<!--pages/friend-invit/friend-invit.wxml-->
+<view class='invit-contanier'>
+   <image src='/images/xy-icon.png' class='xy-icon'></image>
+  <text class='blood-txt'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供专项补贴</text>
+  <view>
+    <view class='blood-view'>
+      <view>
+        <image src='{{invitInfo.avatar}}' class='head-pic'></image>
+        <view class='blood-name'>{{invitInfo.nickname}}</view>
+      </view>
+      <view class='line-b'></view>
+      <text class='blood-txt3'>
+我已持续<text class='blood-col'>{{invitInfo.days}}</text>天
+ 提醒家人和朋友关注健康
+ 收入<text class='blood-col'>{{invitInfo.income}}</text>元！
+邀请你加入我的互助小组 你和家人的健康，我们共同关注
+      </text>
+      <button wx:if="{{type}}" class='blood-btn' open-type="share">分享</button>
+      <button wx:else class='blood-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">加入小组</button>
+    </view>
+  </view> 
+<!-- <view class='invit-view'>
+  <image src='/images/xy-icon.png' class='xy-icon fr' ></image>
+  <view class='clear'></view>
+  <text class='blood-txt col-black'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供专项补贴</text>
+
+  <view class='user-view'>
+    <view class='msg-bm'>
+      <image src='/images/center-icon4.png' class='head-pics'></image>
+      <text>阿拉斯加狄拉克\n
+      你和家人d额健康,我们共同关注</text>
+    </view>
+  </view>
+
+</view> -->
+</view>

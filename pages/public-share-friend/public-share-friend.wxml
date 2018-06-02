@@ -1,0 +1,29 @@
+<!--pages/public-share-friend/public-share-friend.wxml-->
+<view class='invit-contanier'>
+  <image src='/images/xy-icon.png' class='xy-icon'></image>
+  <text class='blood-txt'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天血压”公益行动将为每一个领取智能血压计
+成功上传数据的用户每天补贴1元钱！</text>
+  <view>
+    <view class='blood-view blood-view2 blood-view3'>
+      <view>
+        <open-data type="userAvatarUrl" class='head-pic'></open-data>
+        <view class='blood-name'>
+          <open-data type="userNickName"></open-data>
+        </view>
+      </view>
+      <view class='line-b'></view>
+      <text class='blood-txt3'>
+我已申请加入“天天血压”公益行动
+领取智能血压计，为健康代言
+承诺为家人和朋友监测血压动态数据
+邀请你为我担保
+你和家人的健康，我们共同关注
+</text>
+    </view>
+    <view class='share-view'>
+      <button open-type="share">发送给好友</button>
+      <button bindtap='onPublicshareTap'>发送到朋友圈</button>
+    </view>
+  </view>
+</view>

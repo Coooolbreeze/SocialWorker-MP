@@ -1,0 +1,24 @@
+/* pages/public-share-friend/public-share-friend.wxss */
+
+@import '../team-code/team-code.wxss';
+
+.blood-view3{
+  height: 450rpx;
+  position: relative;
+}
+
+.share-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.share-view button{
+  width: 300rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 40rpx;
+  border: none;
+  background: #ff9c0e;
+  color: white;
+  margin-top: 50rpx;
+}

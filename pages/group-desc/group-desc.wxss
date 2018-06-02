@@ -1,0 +1,14 @@
+/* pages/group-desc/group-desc.wxss */
+.group-container{
+  padding-top: 10rpx;
+  width: 100%;
+  border-top: 1px solid #b3b3b3;
+}
+
+.texts{
+  padding: 0 30rpx ;
+  line-height: 40rpx;
+  display: block;
+  font-size: 28rpx;
+  text-align: justify
+}

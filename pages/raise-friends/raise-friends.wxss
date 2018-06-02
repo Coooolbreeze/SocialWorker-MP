@@ -1,0 +1,46 @@
+/* pages/raise-friends/raise-friends.wxss */
+@import '../public-share/public-share.wxss';
+
+.raise-view{
+  height:620rpx;
+  padding-bottom: 20rpx;
+}
+.invit-contanier{
+  height: auto;
+ padding-bottom: 160rpx;
+
+}
+.line-b{
+  margin: 12rpx auto;
+}
+.head-view{
+  width: 100%;
+  height: 150rpx;
+  margin-top: 10rpx;
+}
+.headpic{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  margin-left: -10rpx;
+  border: 1px solid #fff;
+}
+.col1{
+  color: red;
+}
+.col2{
+  color: #679cce;
+}
+.guarantee-btn{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  color: #fff;
+  background: #f7931e;
+  font-size: 36rpx;
+}
+.guarantee-btn text{
+  font-size: 36rpx;
+}

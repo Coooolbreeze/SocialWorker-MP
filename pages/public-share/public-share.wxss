@@ -1,0 +1,17 @@
+/* pages/public-share/public-share.wxss */
+@import '../friend-invit/friend-invit.wxss';
+@import '../team-code/team-code.wxss';
+
+.jt{
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  right: 0;
+  top: 0;
+
+
+}
+.tips{
+  position: relative;
+  z-index: 999
+}

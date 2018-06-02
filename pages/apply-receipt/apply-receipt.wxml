@@ -1,0 +1,6 @@
+<!--pages/apply-receipt/apply-receipt.wxml-->
+<view class='receipt-cont'>
+  <image src='/images/success.jpg'></image>
+  <text>你已成功申请,我们将尽快为您发货</text>
+  <button bindtap='onApplyequipTap'>我知道了</button>
+</view>

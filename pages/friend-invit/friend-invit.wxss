@@ -1,0 +1,116 @@
+/* pages/friend-invit/friend-invit.wxss */
+.invit-contanier{
+   text-align: center; 
+  border-top: 1px solid #b3b3b3;
+  padding-top: 40rpx;
+}
+.xy-icon{
+  width: 450rpx;
+  height: 130rpx;
+
+}
+.blood-txt{
+  color: red;
+  font-size: 64rpx;
+  font-weight: bold;
+  display: block;
+  margin-top: 36rpx;
+}
+.blood-txt2{
+  color: #808080;
+  margin-top: 30rpx;
+  margin-bottom: 100rpx;
+  display: block
+}
+.blood-view{
+  width: 566rpx;
+  height: 600rpx;
+  border: 1px solid #b3b3b3;
+  border-radius: 30rpx;
+  margin: 0 auto;
+ 
+
+}
+
+.head-pic{
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 50%;
+  position: relative;
+  top: -60rpx;
+  margin: 0 auto;
+  display: inline-block
+}
+.blood-name{
+  margin-top: -40rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+
+}
+.line-b{
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px dashed #b3b3b3;
+  display: inline-block
+}
+.blood-txt3{
+  font-size: 28rpx;
+  text-align: center;
+  padding:0 50rpx;
+  display:block;
+  line-height: 40rpx;
+}
+.blood-btn{
+  width: 240rpx;
+  height: 70rpx;
+  color: white;
+  line-height: 70rpx;
+  background: #ff9c0e;
+  border-radius: 50rpx;
+  border: none;
+  margin-top: 40rpx;
+  font-size: 28rpx;
+}
+.blood-col{
+color: red;
+}
+
+
+/* .col-black{
+  color: black
+}
+.invit-view{
+ padding: 30rpx;
+ box-sizing: border-box;
+
+}
+.fr{
+  width: 260rpx;
+  height: 110rpx;
+  display: block;
+  float: right;
+  margin-bottom: 20rpx;
+}
+.clear{
+  clear: both;
+}
+
+.user-view{
+  width: 566rpx;
+  height: 300rpx;
+  border: 1px solid #b3b3b3;
+  border-radius: 30rpx;
+  margin: 0 auto;
+  padding: 30rpx；
+}
+.head-pics{
+  width: 126rpx;
+  height: 126rpx;
+  border-radius: 50%;
+}
+.msg-bm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #b3b3b3
+} */

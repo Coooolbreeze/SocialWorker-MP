@@ -1,0 +1,51 @@
+/* pages/redemption-list/redemption-list.wxss */
+.contanier{
+  border-top: 1px solid #b3b3b3;
+}
+.redemption-contanier{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  box-sizing: border-box;
+   border-top: 1px solid #f2f2f2;
+   width: 100%;
+   height: 300rpx;
+}
+.product-pic{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 5rpx;
+}
+.red-cont{
+  margin-left: 30rpx;
+  width: 70%;
+}
+.redemption-title{
+  font-size: 28rpx;
+}
+.price-btn{
+  width: 86rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  display: inline-block;
+  background: #29abe2;
+  color: white;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-left: 20rpx;
+}
+.price2{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.time,.nums{
+  font-size: 24rpx;
+  color: #d0d0d0;
+}
+.fh-col{
+  color: #f7931e;
+  font-weight: bold;
+  float: right;
+}

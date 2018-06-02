@@ -1,0 +1,32 @@
+<!--pages/public-share/public-share.wxml-->
+<canvas canvas-id='canvas' style='width:750rpx;height:1200rpx;'></canvas>
+
+<!-- <view class='invit-contanier'>
+  <image src='/images/xy-icon.png' class='xy-icon'></image>
+  <text class='blood-txt'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天血压”公益行动将为每一个领取智能血压计
+成功上传数据的用户每天补贴1元钱！</text>
+  <view>
+    <view class='blood-view blood-view2 '>
+      <view>
+        <image src='/images/center-icon4.png' class='head-pic'></image>
+        <view class='blood-name'>小猪佩奇</view>
+      </view>
+      <view class='line-b'></view>
+      <text class='blood-txt3'>
+我已申请加入“天天血压”公益行动
+领取智能血压计，为健康代言
+承诺为家人和朋友监测血压动态数据
+邀请你为我担保
+你和家人的健康，我们共同关注
+</text>
+      <image src='{{code}}' class='code-pic' bindtap='onRasiefriendTap'></image>
+      <view class='join'>扫码为我提供设备使用担保</view>
+    </view>
+  </view>
+  <view style='width:0;height:0;overflow:hidden;'>
+    <canvas canvas-id='share' class='jt'></canvas>
+  </view>
+
+  <view class='tips' bindtap='saveImageToPhotosAlbum'>点击保存图片</view>
+</view> -->

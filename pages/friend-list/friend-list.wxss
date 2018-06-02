@@ -1,0 +1,36 @@
+/* pages/friend-list/friend-list.wxss */
+
+.container {
+  width: 100%;
+  border-top: 1px solid #b3b3b3;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: white;
+}
+
+.friend-view {
+  width: 115rpx;
+  height: 154rpx;
+  float: left;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.friend-main::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.friend-view image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.friend-view text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

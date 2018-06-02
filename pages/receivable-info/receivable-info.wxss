@@ -1,0 +1,2 @@
+/* pages/receivable-info/receivable-info.wxss */
+@import "../personal-info/personal-info.wxss"

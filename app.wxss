@@ -1,0 +1,11 @@
+/**app.wxss**/
+text{
+    font-family: MicroSoft Yahei;
+    font-size:24rpx;
+}
+.col{
+  color: red;
+}
+.container{
+  background: #f2f2f2;
+}

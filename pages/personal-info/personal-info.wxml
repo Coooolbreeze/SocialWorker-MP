@@ -1,0 +1,31 @@
+<!--pages/personal-info/personal-info.wxml-->
+<view class='info-container'>
+  <view class='info-cont'>
+    <text>您的姓名</text>
+    <input bindinput='onNameInput' class="name" name="name" value='{{name}}' placeholder="请输入您的姓名" />
+    <text>您的电话</text>
+    <input bindinput='onPhoneInput' type='number' class="name" name="phone" value='{{phone}}' placeholder="请输入您的电话" />
+  </view>
+
+<radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+</radio-group>
+
+   <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx">
+        <view class="picker">
+        文化程度:
+         <input type='number' class="wh-text" name="phone" value='{{pic_array[hx_index].name}}' placeholder="请选择" />
+        </view>
+      </picker>
+
+      <picker name="picker_hx2" class="cybm_pic_1" value="{{pic_array2[hx_index2].id}}" data-selecthx="{{pic_array2[hx_index2].name}}" range="{{pic_array2}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx2">
+        <view class="picker">
+        年龄:
+         <input type='number' class="wh-text" name="phone" value='{{pic_array2[hx_index2].name}}' placeholder="请选择" />
+        </view>
+      </picker>
+
+  <view class='preser-btn' bindtap='onHealthrecordTap'>保存信息</view>
+</view>

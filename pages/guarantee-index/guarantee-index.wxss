@@ -1,0 +1,20 @@
+/* pages/guarantee-index/guarantee-index.wxss */
+@import '../friend-invit/friend-invit.wxss';
+
+.blood-view4{
+  height: 630rpx;
+}
+.head-view{
+  display: flex;
+  flex-direction: row;
+  width: 76%;
+  margin: 15rpx auto;
+  box-sizing: border-box;
+}
+.head-pic2{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-left: -10rpx;
+}

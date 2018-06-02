@@ -1,0 +1,30 @@
+<!--pages/team/team.wxml-->
+<view class='container'>
+  <view class='team-view'>
+    <image src="{{groupInfo.service_code}}" class='team-code'></image>
+    <text class='team-text'>扫码加入我们的小组</text>
+  </view>
+
+  <view class='team-mid'>
+    <view class='team-tit'>已有{{groupInfo.users_num}}人加入了你的互动小组</view>
+    <view class='team-head' bindtap='onFriendsTap'>
+      <image src='{{groupInfo.creator.avatar}}' class='head-pic'></image>
+      <block wx:for="{{groupInfo.users}}" wx:key="{{index}}">
+        <image src='{{item.avatar}}' class='head-pic'></image>
+      </block>
+      <image src='/images/line-ri.png' class='line-ri'></image>
+    </view>
+  </view>
+
+  <view class='team-bottom'>
+    <view class='share-friend' bindtap='onSharefriend'>
+      分享到好友
+      <image src='/images/line-ri.png'></image>
+    </view>
+    <view class='share-quan' bindtap='onFriendshareTap'>
+      分享到朋友圈
+      <image src='/images/line-ri.png'></image>
+    </view>
+  </view>
+  <view class='tema-text' bindtap='onGroupTap'>如何创建并加入小组？</view>
+</view>

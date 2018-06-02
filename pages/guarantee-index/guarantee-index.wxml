@@ -1,0 +1,37 @@
+<!--pages/guarantee-index/guarantee-index.wxml-->
+<view class='invit-contanier'>
+  <image src='/images/xy-icon.png' class='xy-icon'></image>
+  <text class='blood-txt'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天血压”公益行动将为每一个领取智能血压计
+成功上传数据的用户每天补贴1元钱！</text>
+
+  <view>
+    <view class='blood-view  blood-view4'>
+      <image src='/images/center-icon4.png' class='head-pic'></image>
+      <text class='blood-name'>小猪佩奇</text>
+      <view class='line-b'></view>
+      <text class='blood-txt3'>
+我已申请加入“天天血压”公益行动
+领取智能血压计，为健康代言
+承诺为家人和朋友监测血压动态数据
+邀请你为我担保
+你和家人的健康，我们共同关注
+</text>
+<view class='line-b'></view>
+
+<view class='head-view'>
+<image src='/images/center-icon4.png' class='head-pic2'></image>
+<image src='/images/center-icon4.png' class='head-pic2'></image>
+<image src='/images/center-icon4.png' class='head-pic2'></image>
+<image src='/images/center-icon4.png' class='head-pic2'></image>
+<image src='/images/center-icon4.png' class='head-pic2'></image>
+<image src='/images/center-icon4.png' class='head-pic2'></image>
+<image src='/images/yuan.png' class='head-pic2'></image>
+</view>
+
+<text>已经有<text class='col'>24</text>人为晓明提供设备使用担保</text>
+    </view>
+
+
+  </view>
+</view>

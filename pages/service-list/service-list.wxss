@@ -1,0 +1,54 @@
+/* pages/service-list/service-list.wxss */
+@import "../health-records/health-records.wxss";
+.lines{
+  border-right: 1px solid #b3b3b3;
+  height: 70rpx;
+  margin-top: 10rpx;
+}
+.service-btn{
+  width: 280rpx;
+  height: 66rpx;
+  border-radius: 40rpx;
+  line-height: 66rpx;
+  background: #ff9c0e;
+  color: white;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  border: none；
+}
+.ser-bg{
+  background: #f2f2f2;
+}
+
+
+.nav{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.default{
+  line-height: 90rpx;
+  text-align: center;
+  flex: 1;
+  color: #b3b3b3;
+  background: #fff;
+}
+.orange{
+  line-height: 90rpx;
+  text-align: center;
+  flex: 1;
+  color: #ffa500;
+  background: #fff;
+}
+.show{
+  display: block;
+
+}
+.hidden{
+  display: none;
+}

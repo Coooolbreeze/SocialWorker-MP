@@ -1,0 +1,2 @@
+/* pages/blood-info/blood-info.wxss */
+@import "../personal-info/personal-info.wxss"

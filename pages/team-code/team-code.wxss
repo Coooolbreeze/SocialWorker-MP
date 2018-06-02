@@ -1,0 +1,30 @@
+/* pages/team-code/team-code.wxss */
+@import '../friend-invit/friend-invit.wxss';
+
+.code-pic{
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 15rpx;
+}
+.blood-view2{
+  height: auto;
+  padding-bottom: 0rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+.headpics{
+  position: relative;
+  margin: 0 auto;
+  top: -60rpx;
+}
+
+.join{
+  width: 300rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #fff;
+  font-size: 24rpx;
+  position: relative;
+  bottom: -15rpx;
+  margin: 0 auto;
+}

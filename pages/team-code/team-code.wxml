@@ -1,0 +1,28 @@
+<!--pages/team-code/team-code.wxml-->
+<canvas canvas-id='canvas' style='width:750rpx;height:1200rpx;'></canvas>
+
+<!-- <view class='invit-contanier'>
+  <image src='/images/xy-icon.png' class='xy-icon'></image>
+  <text class='blood-txt'>你测血压，我付钱!</text>
+  <text class='blood-txt2'>天天血压”公益行动将为每一个领取智能血压计
+成功上传数据的用户每天补贴1元钱！</text>
+
+  <view>
+    <view class='blood-view blood-view2'>
+    <view>
+       <image src='/images/center-icon4.png' class='head-pic'></image>
+      <view class='blood-name'>小猪佩奇</view>
+    </view>
+      <view class='line-b'></view>
+      <text class='blood-txt3'>
+我已持续<text class='blood-col'>125</text>天
+坚持为家人和朋友监测血压
+收入<text class='blood-col'>125</text>元！
+邀请你加入我的互助小组
+你和家人的健康，我们共同关注
+</text>
+      <image src='/images/code.png' class='code-pic'></image>
+    <view class='join'>扫码加入我的小组</view>
+    </view>
+  </view>
+</view> -->

@@ -1,0 +1,32 @@
+<!--pages/health-records/health-records.wxml-->
+<view class='container'>
+  <view class='record-container' bindtap='onInfoTap'>
+    <image src='{{info.avatar}}' class='head-pic'></image>
+    <view class='record-view'>
+      <text class='record-name'>{{info.name === '-' ? info.nickname : info.name}}</text>
+      <image wx:if='{{info.sex !== "未知"}}' src='/images/man.jpg' class='man-icon'></image>
+      <!-- <text class='old'>23岁</text> -->
+      <view class='view-btn'>加班熬夜</view>
+    </view>
+    <image src='/images/line-ri.png' class='line-ri'></image>
+  </view>
+
+  <view class='record-list'>
+    <view class='record-cont' wx:for='{{info.checks}}' wx:key='{{item.id}}'>
+      <text class='record-tit'>{{item.service.name}}</text>
+      <text class='record-date'>{{item.created_at}}</text>
+      <view class='record-msg'>
+        检查人：
+        <text>{{item.inspector.nickname}}</text>
+      </view>
+      <view class='record-msg'>
+        检查金额：
+        <text>￥{{item.price}}</text>
+      </view>
+      <view class='record-msg'>
+        检查结果：
+        <text>{{item.detection_result || '尚未录入'}}</text>
+      </view>
+    </view>
+  </view>
+</view>

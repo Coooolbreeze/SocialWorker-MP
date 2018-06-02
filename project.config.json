@@ -1,0 +1,165 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.8",
+	"appid": "wx87da90724237fd8f",
+	"projectname": "sgzj530",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "scanner",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "team",
+					"pathName": "pages/team/team",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "friend-invit",
+					"pathName": "pages/friend-invit/friend-invit",
+					"query": "id=6&type=share"
+				},
+				{
+					"id": 3,
+					"name": "personal-center",
+					"pathName": "pages/personal-center/personal-center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "social-work",
+					"pathName": "pages/social-work/social-work",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "scene=1"
+				},
+				{
+					"id": 6,
+					"name": "team-code",
+					"pathName": "pages/team-code/team-code",
+					"query": "id=13"
+				},
+				{
+					"id": -1,
+					"name": "device-management",
+					"pathName": "pages/device-management/device-management",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "apply-equipment",
+					"pathName": "pages/apply-equipment/apply-equipment",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "service-list",
+					"pathName": "pages/service-list/service-list",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "apply-present",
+					"pathName": "pages/apply-present/apply-present",
+					"query": "number=10000"
+				},
+				{
+					"id": -1,
+					"name": "service-list",
+					"pathName": "pages/service-list/service-list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "health-records",
+					"pathName": "pages/health-records/health-records",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "public-share",
+					"pathName": "pages/public-share/public-share",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "public-share-friend",
+					"pathName": "pages/public-share-friend/public-share-friend",
+					"query": "id=9&code=http://worker.test/api/funding_codes/5"
+				},
+				{
+					"id": 15,
+					"name": "raise-friends",
+					"pathName": "pages/raise-friends/raise-friends",
+					"query": "scene=1"
+				},
+				{
+					"id": 16,
+					"name": "confirm-apply",
+					"pathName": "pages/confirm-apply/confirm-apply",
+					"query": "from=equipment"
+				},
+				{
+					"id": 17,
+					"name": "choose-service",
+					"pathName": "pages/choose-service/choose-service",
+					"query": "scene=1"
+				},
+				{
+					"id": -1,
+					"name": "personal-info",
+					"pathName": "pages/personal-info/personal-info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "blood-info",
+					"pathName": "pages/blood-info/blood-info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "public-list",
+					"pathName": "pages/public-list/public-list",
+					"query": ""
+				}
+			]
+		}
+	}
+}

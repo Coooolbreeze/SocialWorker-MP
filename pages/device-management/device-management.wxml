@@ -1,0 +1,32 @@
+<!--pages/device-management/device-management.wxml-->
+<view class='container'>
+  <view class='dev-container'>
+    <button class='device-btn' bindtap="click">扫码添加设备</button>
+    <text class='dev-text' bindtap='onApplyTap'>还没有设备？立即申请</text>
+  </view>
+
+  <view class='dev-container-t'>
+    <text class='dev-title'>已绑定设备：</text>
+    <block wx:for="{{device}}" wx:key="{{item.id}}">
+      <view class='device-view'>
+        <view class='device-txt'>
+          <text class='dev-name'>{{item.category}}</text>
+          <text class='dev-num'>{{item.serial_no}}</text>
+        </view>
+        <button class='dev-btn-s' data-serial_no="{{item.serial_no}}" bindtap="unbind">解绑</button>
+      </view>
+    </block>
+
+    <!--弹窗  -->
+    <view class="modal-box " hidden="{{flag}}">
+      <view class="modal-body">
+        <view class="modal-content box-height">
+          <view class='code-title'>绑定设备</view>
+          <input class="input" value='{{serialNo}}' bindinput='serialNoInput' placeholder="请输入设备序列号" />
+          <text class="knowBtn yes-btn" bindtap="bind">确定绑定</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

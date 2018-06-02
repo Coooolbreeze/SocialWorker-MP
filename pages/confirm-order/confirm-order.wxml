@@ -1,0 +1,41 @@
+<!--pages/confirm-order/confirm-order.wxml-->
+<view class='order-container'>
+  <view class='order-view1'>
+    <view bindtap='onConfirmapplyTap'>
+      <text class='name'>佩奇先生</text>
+      <text class='phone'>16677889900</text>
+      <text class='area'>北京市丰台区宋家庄位子坑149号庄子写字楼北楼一层</text>
+    </view>
+    <image src='/images/line-ri.png' class='line-ri'></image>
+  </view>
+  <image src='/images/line-bt.png' class='line-bt'></image>
+
+  <view class='order-detail'>
+    <view class='order-view'>
+      <image src='/images/product.png' class='product'></image>
+      <view class='product-msg'>
+        <text class='product-name'>家居用品卫生间用具厨房百货家用小东西生活创意收纳神器</text>
+        <view class='pro-view'><text class='product-price'>520</text>社工券 <text class='price-btn'>+29元</text></view>
+      </view>
+      <view class='number'>x2</view>
+    </view>
+
+    <view class='dikou'>
+    <text>社工券抵扣</text>
+    <text class='col cols'>718</text>
+    </view>
+     <view class='dikou pay' >
+    <text>还需支付金额</text>
+    <text class='col cols'>718元</text>
+    </view>
+  </view>
+
+  <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for-items="{{items}}">
+        <checkbox style="transform:scale(.7)"  value="{{item.name}}" checked="{{item.checked}}" />我已同意
+        <text class='checks' bindtap='onUseprotocolTap'>《安新社工之家社工券使用协议》</text>
+      </label>
+    </checkbox-group>
+
+    <view class='yes-btn'>确认兑换</view>
+</view>

@@ -1,0 +1,16 @@
+<!--pages/selection-label/selection-label.wxml-->
+<view class='selection-view'>
+<checkbox-group bindchange="serviceValChange">  
+        <view class="service_selection flex">  
+          <block wx:for="{{allGoodsFilte}}">  
+            <view class=" item">  
+  
+              <label class="checkbox {{item.checked?'is_checked':''}}">  
+                <checkbox value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+              </label>  
+            </view>  
+          </block>  
+        </view>  
+</checkbox-group> 
+</view>
+<button class='select-btn' bindtap='onHealthassessTap'>返回健康评估</button>

@@ -1,0 +1,10 @@
+<!--pages/receivable-info/receivable-info.wxml-->
+<view class='info-container'>
+  <view class='info-cont'>
+    <text>收款人</text>
+    <input bindinput='onNameInput' class="name" name="name" placeholder="请输入..." value="{{info.name || ''}}" />
+    <text>您的身份证号码(用于缴纳个人所得税)</text>
+    <input bindinput='onCardInput' type='idcard' class="name" name="phone" placeholder="请输入..." value="{{info.id_card_no || ''}}" />
+  </view>
+  <view class='preser-btn' bindtap='onApplypresentTap'>保存</view>
+</view>

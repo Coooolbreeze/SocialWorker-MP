@@ -1,0 +1,97 @@
+/* pages/device-management/device-management.wxss */
+@import "../health-center/health-center.wxss";
+.container {
+  background: #f2f2f2;
+}
+
+.dev-container {
+  width: 100%;
+  height: 208rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  text-align: center;
+  padding-top: 60rpx;
+  border-top: 1px solid #b3b3b3
+}
+
+.device-btn {
+  width: 640rpx;
+  height: 90rpx;
+  border-radius: 30px;
+  border: 1px solid #ff9c0e;
+  color: #ff9c0e;
+  background: #fff;
+  margin-bottom: 30rpx;
+  line-height: 90rpx;
+}
+
+.dev-text {
+  color: #54b7e6;
+}
+
+.dev-container-t {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 40rpx 0 0  0;
+  box-sizing: border-box;
+ 
+}
+.dev-title{
+  font-size: 30rpx;
+}
+.device-view{
+  width: 100%;
+  height: 134rpx;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 0 30rpx 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.dev-name{
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display:block;
+}
+
+.dev-title{
+  margin-left: 30rpx;
+}
+
+.dev-btn-s{
+  width: 164rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background: #ff9c0e;
+  line-height: 60rpx;
+  color: white;
+  font-size: 24rpx;
+  margin-right: 0rpx;
+}
+.input{
+  width: 360rpx;
+  height: 60rpx;
+  border: 1px solid #b3b3b3;
+  border-radius: 40rpx;
+  margin: 0 auto;
+  font-size: 24rpx;
+}
+.box-height{
+  height: 325rpx;
+}
+.code-title{
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.yes-btn{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1px solid #b3b3b3;
+  margin-top: 50rpx;
+  font-size: 30rpx;
+  color: #ff9c0e
+}

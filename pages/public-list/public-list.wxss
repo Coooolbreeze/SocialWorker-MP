@@ -1,0 +1,14 @@
+/* pages/public-list/public-list.wxss */
+@import '../device-management/device-management.wxss';
+.top-bm{
+ border-top: 1px solid #b3b3b3;
+}
+.dev-name{
+  font-size: 30rpx;
+}
+.apply-text{
+  color: #7cc5ee;
+  font-size: 32rpx;
+  padding: 30rpx;
+  display: block;
+}

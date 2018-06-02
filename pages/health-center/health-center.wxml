@@ -1,0 +1,35 @@
+<!--pages/health-center/health-center.wxml-->
+<view class='health-container'>
+  <!-- <view class='help ' bindtap="show">
+    我的服务码
+    <image src='/images/code-s.png' class='code-pic'></image>
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view> -->
+  <view class='help' bindtap='onDeviceTap'>设备管理
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+  <view class='help' bindtap='onServiceTap'>服务列表
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+  <view class='help' bindtap='servicesTap'>服务说明
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+  <view class='help' bindtap='onAppleequipmentTap'>众筹列表
+    <image src='/images/line-ri.png' class='line-ri'></image>
+    <view class='clear'></view>
+  </view>
+  <!--弹窗  -->
+  <view class="modal-box" hidden="{{flag}}" bindtap="hide">
+    <view class="modal-body">
+      <view class="modal-content">
+        <view class='code-title'>我的服务码</view>
+        <image src="/images/code.png" class="fenxiang"></image>
+        <text class="knowBtn" bindtap="hide">扫码选择测试项目</text>
+      </view>
+    </view>
+  </view>
+</view>

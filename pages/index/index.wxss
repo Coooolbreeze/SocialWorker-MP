@@ -1,0 +1,185 @@
+/**index.wxss**/
+
+.index-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 320rpx;
+  background: #f7931e;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 0 30rpx;
+  color: white;
+  overflow: hidden;
+}
+.head-pic{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+.head-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.use-name{
+  font-size: 28rpx;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 20rpx;
+}
+.title{
+  display: inline-block;
+  padding-left:20rpx;
+   font-weight: 100;
+}
+.price{
+  font-size: 80rpx;
+  display: inline-block;
+  margin-bottom: 10rpx;
+}
+.sg-view{
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pro-icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+.share-btn,.dh-btn{
+  width: 200rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #fff7eb;
+  border-radius: 30rpx;
+  color: #f7931e;
+  text-align: left;
+  padding-left: 35rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  position: relative;
+  right: -60rpx;
+  bottom: 10rpx;
+}
+.dh{
+  margin-top: 30rpx;
+}
+/* .nav {
+    height: 90rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 90rpx;
+    background: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+     position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 99;
+    border-bottom: 1px solid #b3b3b3; 
+} */
+.nav-item {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+.nav-item.active{
+    color: #f7931e;
+    
+}
+.tab-box{
+    background: white;
+    padding-top: 80rpx;
+    /* height: 1540rpx;
+    max-height: 1900rpx; */
+    box-sizing: border-box;
+    padding: 0 30rpx;
+}
+.tab-content{
+    overflow-y: scroll;
+    background: white;
+}
+.vv{
+  width: 100%;
+  /* height: 1200rpx; */
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.index-product{
+  width: 48%;
+  height: 456rpx; 
+  margin-top: 30rpx;
+}
+.index-product::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right
+}
+.product-pic{
+  width: 100%;
+  height: 320rpx;
+  display: block;
+}
+.pro-title{
+  font-size: 30rpx;
+  display: inline-block;
+  margin-top: 20rpx;
+}
+.price2{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: red;
+}
+.price-btn{
+  width: 86rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  display: inline-block;
+  background: #29abe2;
+  color: white;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-left: 10rpx;
+}
+.sg-view{
+  margin-top: 15rpx;
+ 
+}
+.price-btn{
+  position: relative;
+  bottom: 3rpx;
+}
+
+
+
+/*商品内容  */
+.tab-h{
+    height: 80rpx;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx;background: #fff; font-size: 14px; white-space: nowrap; z-index: 99;}
+.tab-item{margin:0 auto;
+display:inline-block;
+width:20%;
+text-align:center;
+}
+.tab-item.active{color: #f7931e;position:relative}
+.tab-item.active:after{ content: "";display: block;height: 8rpx;width: 80%;background: #f7931e;position: absolute; bottom: 0;left: 15rpx;border-radius: 16rpx;}
+.avatar{width: 100rpx;height: 100rpx;position: relative;padding-right: 30rpx;}
+.avatar .img{width: 100%;height: 100%;}
+.avatar .doyen{width: 40rpx;height: 40rpx;position: absolute;bottom: -2px;right: 20rpx;}
+.expertInfo{font-size: 12px;flex-grow: 2;color: #B0B0B0;line-height: 1.5em;}
+.expertInfo .name{font-size: 16px;color:#000;margin-bottom: 6px;}
+.askBtn{ width: 120rpx;height: 60rpx;line-height: 60rpx;text-align: center;font-size: 14px; border-radius: 60rpx;border: 1px solid #4675F9; color:#4675F9;}
+.scoll-h{height: 100%;}
+

@@ -1,0 +1,18 @@
+/* pages/selection-label/selection-label.wxss */
+@import '../health-assess/health-assess.wxss';
+
+.selection-view{
+  padding:  30rpx;
+  box-sizing: border-box;
+  border-top: 1px solid #b3b3b3
+}
+.select-btn{
+ width: 100%;
+ height: 100rpx;
+ line-height: 100rpx;
+ color: white;
+ background: #f7931e;
+ border-radius: 0px;
+ position: fixed;
+ bottom: 0;
+}

@@ -1,0 +1,11 @@
+/* pages/social-descrip/social-descrip.wxss */
+.sgq-text{
+padding:30rpx;
+box-sizing:border-box;
+text-align:justify;
+display:block;
+line-height:46rpx;
+font-size:28rpx;
+text-indent: 5rpx;
+border-top: 1px solid #b3b3b3
+}

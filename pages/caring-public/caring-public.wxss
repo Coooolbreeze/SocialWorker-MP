@@ -1,0 +1,10 @@
+/* pages/caring-public/caring-public.wxss */
+.plan-text{
+  padding: 30rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  display: block;
+  text-align: justify;
+  border-top: 1px solid #b3b3b3;
+}

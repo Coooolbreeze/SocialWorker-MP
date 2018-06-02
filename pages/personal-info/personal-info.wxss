@@ -1,0 +1,51 @@
+/* pages/personal-info/personal-info.wxss */
+@import '../confirm-apply/confirm-apply.wxss';
+.info-container{
+  width: 100%;
+}
+.info-cont{
+  border-top: 1px solid #b3b3b3;
+  padding-top: 30rpx;
+  padding: 20rpx 30rpx;
+}
+.info-cont text{
+  font-size: 28rpx;
+
+}
+.info-cont input{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #b3b3b3;
+  font-size: 28rpx;
+  margin-bottom: 30rpx;
+ 
+}
+.preser-btn{
+  width: 100%;
+  height: 110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  color: white;
+  background: #f7931e;
+  position: fixed;
+  bottom: 0;
+}
+.radio-group{
+  padding:  0  30rpx;
+  font-size: 32rpx;
+}
+.radio{
+  margin-right: 30rpx;
+}
+
+.cybm_pic_1{
+  padding:40rpx 30rpx;
+  font-size: 30rpx;
+}
+.wh-text{
+  width: 100%;
+  border-bottom: 1px solid #b3b3b3;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+}

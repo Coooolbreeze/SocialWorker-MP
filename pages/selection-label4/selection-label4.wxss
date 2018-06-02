@@ -1,0 +1,2 @@
+/* pages/selection-label4/selection-label4.wxss */
+@import '../selection-label/selection-label.wxss'

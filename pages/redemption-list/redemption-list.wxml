@@ -1,0 +1,39 @@
+<!--pages/redemption-list/redemption-list.wxml-->
+<view class='contanier'>
+<block wx:for="{{redemption}}"  wx:for-item="item" wx:for-index="idx">
+  <view class='redemption-contanier'>
+    <view><image src='{{item.productUrl}}' class='product-pic'></image></view>
+    <view class='red-cont'>
+        <text class='redemption-title'>{{item.title}}</text>
+        <view class='sg-view'>
+              <text class='price2'>{{item.price}}社工券</text>
+              <text class='price-btn'>+{{item.pricejia}}</text>
+        </view>
+        <view><text class='time'>{{item.time}}</text> <text class='fh-col fr'>已发货</text></view>
+        <text class='nums'>运单号：{{item.num}}</text>
+    </view>
+  </view>
+</block>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view> 
