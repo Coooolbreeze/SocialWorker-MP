@@ -23,7 +23,7 @@ Page({
 
   onInfoTap: function () {
     wx.navigateTo({
-      url: `../personal-info/personal-info?name=${this.data.info.name}&phone=${this.data.info.phone}`,
+      url: `../personal-info/personal-info?name=${this.data.info.name}&phone=${this.data.info.phone}&sex=${this.data.info.sex}&age=${this.data.info.age}&education=${this.data.info.education}`,
     })
   }
 })

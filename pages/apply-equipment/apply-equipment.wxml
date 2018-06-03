@@ -22,12 +22,11 @@
         <view class="item">
           <label class="checkbox {{item.checked?'is_checked':''}}">
             <checkbox value="{{item.id}}" checked="{{item.checked}}" hidden="false" />
-            <image src='/images/sb-pic01.png' class='sb-pic01'></image>
+            <image src=' {{item.images}}' class='sb-pic01'></image>
           </label>
-          <image hidden='{{!item.checked}}' class='suc' bindtap='onquxiao' data-index='{{index}}' src='/images/suc.png'></image>
+          <image hidden='{{!item.checked}}' class='suc' bindtap='onquxiao' data-index='{{index}}' src='/images/suc.png' ></image>
           <view class='name-txt'>
-            {{item.name}}
-            <text class='red-col'>{{item.price}}</text>元
+           {{item.name}} <text class='red-col'>{{item.price}}</text>元
           </view>
         </view>
       </block>

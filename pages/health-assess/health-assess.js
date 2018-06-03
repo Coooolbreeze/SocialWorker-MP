@@ -5,31 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    allGoodsFilte: [
-      { name: '肢体麻木', value: '0', checked: true },
-      { name: '加班熬夜', value: '1', checked: false },
-      { name: '失眠头痛', value: '2', checked: false },
-      { name: '腹部肥胖', value: '3', checked: false },
-      { name: '口苦', value: '4', checked: false },
-      { name: '腹部肥胖', value: '5', checked: false },
-      { name: '口苦', value: '6', checked: false },
-    ],  
   },
-
-  serviceValChange: function (e) {
-    var allGoodsFilte = this.data.allGoodsFilte;
-    var checkArr = e.detail.value;
-    for (var i = 0; i < allGoodsFilte.length; i++) {
-      if (checkArr.indexOf(i + "") != -1) {
-        allGoodsFilte[i].checked = true;
-      } else {
-        allGoodsFilte[i].checked = false;
-      }
-    }
-    this.setData({
-      allGoodsFilte: allGoodsFilte
-    })
-  }  ,
 
   onRecordsTap:function(){
     wx.navigateTo({
@@ -55,13 +31,13 @@ Page({
     })
   },
   //跳转选标签4
-  onselectlabelTap: function () {
+  onselectlabelTap4: function () {
     wx.navigateTo({
       url: '../selection-label4/selection-label4',
     })
   },
   //跳转选标签5
-  onselectlabelTap: function () {
+  onselectlabelTap5: function () {
     wx.navigateTo({
       url: '../selection-label5/selection-label5',
     })

@@ -8,6 +8,7 @@ Page({
    */
   data: {
     id: null,
+    type: null,
     info: null,
     isPaid: false
   },
@@ -18,7 +19,10 @@ Page({
   onLoad: function (options) {
     wx.removeStorageSync('token');
 
-    this.setData({ id: options.id || decodeURIComponent(options.scene) })
+    this.setData({
+      id: options.id || decodeURIComponent(options.scene),
+      type: options.type
+    })
 
     raiseFriends.getEquipmentOrder(this.data.id, res => {
       this.setData({ info: res })
@@ -46,16 +50,30 @@ Page({
     }
   },
 
+  selfPay: function () {
+    raiseFriends.getSelfPayment(this.data.info.order_no, res => {
+      wx.requestPayment({
+        timeStamp: res.timestamp,
+        nonceStr: res.nonceStr,
+        package: res.package,
+        signType: res.signType,
+        paySign: res.paySign,
+        success: res => {
+          // 支付成功
+          wx.redirectTo({
+            url: '/pages/confirm-apply/confirm-apply?from=equipment',
+          })
+        }
+      })
+    })
+  },
+
   toPay: function () {
     wx.showLoading({
       title: '提交中',
       mask: true
     })
 
-    this.pay()
-  },
-
-  pay: function () {
     raiseFriends.getPreOrder(this.data.id, res => {
       wx.hideLoading()
 

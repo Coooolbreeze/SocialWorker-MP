@@ -2,9 +2,19 @@
 .invit-contanier{
    text-align: center; 
   border-top: 1px solid #b3b3b3;
-  padding-top: 40rpx;
+  /* padding-top: 40rpx; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden
 }
-.xy-icon{
+/* .xy-icon{
+    width: 450rpx;
+      height: 130rpx;
+
+
+      
+}
+/* .xy-icon{
   width: 450rpx;
   height: 130rpx;
 
@@ -73,11 +83,21 @@
 }
 .blood-col{
 color: red;
+} */
+
+
+ .col-black{
+  color: black;
+  font-size: 40rpx;
+  display: block;
+  text-align: left;
+  font-weight: bold;
 }
-
-
-/* .col-black{
-  color: black
+.blood-txt2{
+  margin-top: 20rpx;
+  text-align: left;
+  display: block;
+  line-height: 45rpx;
 }
 .invit-view{
  padding: 30rpx;
@@ -86,7 +106,7 @@ color: red;
 }
 .fr{
   width: 260rpx;
-  height: 110rpx;
+  height: 90rpx;
   display: block;
   float: right;
   margin-bottom: 20rpx;
@@ -98,10 +118,10 @@ color: red;
 .user-view{
   width: 566rpx;
   height: 300rpx;
-  border: 1px solid #b3b3b3;
   border-radius: 30rpx;
-  margin: 0 auto;
-  padding: 30rpx；
+  margin: 80rpx auto;
+  padding: 30rpx;
+  background: #fff;
 }
 .head-pics{
   width: 126rpx;
@@ -112,5 +132,66 @@ color: red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-bottom: 1px solid #b3b3b3
-} */
+  border-bottom: 1px dashed #b3b3b3;
+  padding-bottom: 15rpx;
+} 
+.yq-text{
+  display: block;
+  text-align: left;
+  font-size: 32rpx;
+  margin-top: 15rpx;
+}
+.text-mid{
+  text-align: left;
+  display: block;
+  margin-top: 30rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+}
+.join-view{
+  width: 566rpx;
+  height:240rpx;
+  border-radius: 30rpx;
+  margin: 80rpx auto;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15rpx 30rpx;
+}
+.yq-txt{
+  text-align: left;
+  display: block;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+.join-text{
+  width: 70%;
+  height: auto;
+}
+.jr-btns{
+  width: 60%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 30rpx;
+  background: #ff9c0e;
+  border-radius: 30rpx;
+  color: white;
+  font-size: 30rpx;
+}
+.code-wd{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  margin: 30rpx auto;
+
+}
+.code-s{
+  width: 30%;
+}
+.blood-col{
+color: red;
+font-size: 36rpx;
+
+}

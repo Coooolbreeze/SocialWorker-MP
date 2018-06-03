@@ -31,7 +31,10 @@
     </view>
   </view>
 
-  <button wx:if="{{isPaid}}" class='guarantee-btn' style='background-color: #cccccc'>你已经支付过了哦</button>
+  <button wx:if="{{info.status!=0}}" class='guarantee-btn' style='background-color: #cccccc'>订单已完成</button>
+  <button wx:elif="{{type=='self'}}" bindtap='selfPay' class='guarantee-btn'>还差{{info.surplus}}元，去支付
+  </button>
+  <button wx:elif="{{isPaid}}" class='guarantee-btn' style='background-color: #cccccc'>你已经支付过了哦</button>
   <button wx:elif="{{info.surplus < 2.9}}" class='guarantee-btn' style='background-color: #cccccc'>你来晚了哦</button>
   <button wx:else bindtap='toPay' class='guarantee-btn'>同意担保,替Ta支付2.9元保证金</button>
 </view>

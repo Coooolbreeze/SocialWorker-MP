@@ -66,3 +66,8 @@
     </view>
   </view>
 </view> -->
+
+<view>
+<image src='/images/index-bg.jpg'></image>
+<text class='text-mid'>您的健康小店正在装修中</text>
+</view>

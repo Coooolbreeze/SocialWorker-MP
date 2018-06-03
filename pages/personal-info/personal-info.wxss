@@ -1,5 +1,6 @@
 /* pages/personal-info/personal-info.wxss */
 @import '../confirm-apply/confirm-apply.wxss';
+@import '../health-assess/health-assess.wxss';
 .info-container{
   width: 100%;
 }
@@ -29,6 +30,7 @@
   background: #f7931e;
   position: fixed;
   bottom: 0;
+  z-index: 99
 }
 .radio-group{
   padding:  0  30rpx;
@@ -39,8 +41,12 @@
 }
 
 .cybm_pic_1{
-  padding:40rpx 30rpx;
+  padding:26rpx 30rpx;
   font-size: 30rpx;
+}
+.area-input2{
+  height: 100rpx;
+  line-height: 100rpx;
 }
 .wh-text{
   width: 100%;
@@ -48,4 +54,28 @@
   height: 70rpx;
   line-height: 70rpx;
   font-size: 28rpx;
+}
+.input-view2{
+  padding: 0 30rpx;
+  font-size: 30rpx;
+}
+.input-view2 image{
+  right: 30rpx;
+}
+.borders label{
+  padding: 10rpx 14rpx;
+}
+.borders item{
+  padding: 4rpx !important;
+}
+.info-bots{
+  padding-bottom: 120rpx;
+}
+.weidu{
+  padding: 30rpx;
+}
+.wd-text{ 
+  display: block;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
 }

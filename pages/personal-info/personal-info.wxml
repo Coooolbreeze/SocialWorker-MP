@@ -1,5 +1,5 @@
 <!--pages/personal-info/personal-info.wxml-->
-<view class='info-container'>
+<view class='info-container info-bots'>
   <view class='info-cont'>
     <text>您的姓名</text>
     <input bindinput='onNameInput' class="name" name="name" value='{{name}}' placeholder="请输入您的姓名" />
@@ -7,25 +7,67 @@
     <input bindinput='onPhoneInput' type='number' class="name" name="phone" value='{{phone}}' placeholder="请输入您的电话" />
   </view>
 
-<radio-group class="radio-group" bindchange="radioChange">
+  <radio-group class="radio-group" bindchange="radioChange">
     <label class="radio" wx:for="{{items}}">
-        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      <radio value="{{item.name}}" checked="{{item.name == sex}}" />{{item.value}}
     </label>
-</radio-group>
+  </radio-group>
 
-   <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx">
-        <view class="picker">
-        文化程度:
-         <input type='number' class="wh-text" name="phone" value='{{pic_array[hx_index].name}}' placeholder="请选择" />
-        </view>
-      </picker>
+  <picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[hx_index].id}}" data-selecthx="{{pic_array[hx_index].name}}" range="{{pic_array}}" range-key="{{'name'}}" bindchange="bindPickerChange_hx">
+    <view class="picker">
+      <text>文化程度</text>
+      <input type='number' class="wh-text" name="" value='{{education}}' placeholder="请选择" disabled='true' />
+    </view>
+  </picker>
 
-      <picker name="picker_hx2" class="cybm_pic_1" value="{{pic_array2[hx_index2].id}}" data-selecthx="{{pic_array2[hx_index2].name}}" range="{{pic_array2}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx2">
-        <view class="picker">
-        年龄:
-         <input type='number' class="wh-text" name="phone" value='{{pic_array2[hx_index2].name}}' placeholder="请选择" />
-        </view>
-      </picker>
+  <picker name="picker_hx2" class="cybm_pic_1" value="{{pic_array2[hx_index2].id}}" data-selecthx="{{pic_array2[hx_index2].name}}" range="{{pic_array2}}" range-key="{{'name'}}" bindchange="bindPickerChange_hx2">
+    <view class="picker">
+      <text>年龄</text>
+      <input type='number' class="wh-text" name="" value='{{age}}' placeholder="请选择" disabled='true' />
+    </view>
+  </picker>
+
+<view class="input-view input-view2">
+      <input class='area-input area-input2' placeholder="选择" value="{{province}}-{{city}}-{{county}}" bindtap="open" disabled='true' />
+      <image src='/images/line-ri.png'></image>
+    </view>
+
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;background:#f2f2f2;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="open" class="city-cancel">取消</view>
+      <view bindtap="open" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" class='view-text'>{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" class='view-text'>{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" class='view-text'>{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+
+<!--多选  -->
+<view class='weidu'>
+<text class='wd-text'>五个维度多选</text>
+<checkbox-group bindchange="serviceValChange">  
+        <view class="service_selection flex borders">  
+          <block wx:for="{{allGoodsFilte}}">  
+            <view class=" item">  
+  
+              <label class="checkbox {{item.checked?'is_checked':''}}">  
+                <checkbox value="{{item.value}}" checked="{{item.checked}}" hidden="false" />{{item.name}}  
+              </label>  
+            </view>  
+          </block>  
+        </view>  
+</checkbox-group> 
+</view>
+
 
   <view class='preser-btn' bindtap='onHealthrecordTap'>保存信息</view>
 </view>

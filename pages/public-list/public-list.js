@@ -17,6 +17,13 @@ Page({
     publicList.getOrders(res => this.setData({ list: res }))
   },
 
+  unbind: function (event) {
+    let id = publicList.getDataSet(event, 'id')
+    wx.navigateTo({
+      url: '/pages/raise-friends/raise-friends?type=self&id=' + id,
+    })
+  },
+
   ondeviceTap: function () {
     wx.navigateTo({
       url: '/pages/apply-equipment/apply-equipment',

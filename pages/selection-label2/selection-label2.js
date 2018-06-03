@@ -6,7 +6,7 @@ Page({
    */
   data: {
     allGoodsFilte: [
-      { name: '务农', value: '0', checked: true },
+      { name: '务农', value: '0', checked: false },
       { name: '工人', value: '1', checked: false },
       { name: '企业职员', value: '2', checked: false },
       { name: '管理人员', value: '3', checked: false },

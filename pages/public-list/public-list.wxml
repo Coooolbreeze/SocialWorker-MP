@@ -6,7 +6,7 @@
     <view class='device-txt'>
       <text class='dev-name dev-name2'>{{item.products[0].name}}</text>
     </view>
-    <button class='dev-btn-s' bindtap="unbind">查看</button>
+    <button class='dev-btn-s' data-id="{{item.id}}" bindtap="unbind">查看</button>
   </view>
 
   <text class='apply-text' bindtap='ondeviceTap'>还没有设备？立即申请</text>

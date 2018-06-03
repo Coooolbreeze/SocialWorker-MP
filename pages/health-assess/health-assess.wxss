@@ -106,7 +106,7 @@ page{
   box-sizing: border-box;
   float: left;
   display: inline-block;
-  padding: 5px;
+  padding: 4px;
 }
 
 .service_selection {

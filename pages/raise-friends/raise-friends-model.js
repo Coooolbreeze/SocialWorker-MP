@@ -31,6 +31,16 @@ class RaiseFriends extends Base {
     this.request(params)
   }
 
+  getSelfPayment(order_no, callback) {
+    let params = {
+      url: '/payment/wechat_pay',
+      method: 'POST',
+      data: { order_no, type: 1 },
+      success: res => callback && callback(res.data)
+    }
+    this.request(params)
+  }
+
   getPayment(order_no, callback) {
     let params = {
       url: '/payment/wechat_pay',

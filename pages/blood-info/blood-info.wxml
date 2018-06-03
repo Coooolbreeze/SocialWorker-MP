@@ -1,10 +1,47 @@
 <!--pages/blood-info/blood-info.wxml-->
-<view class='info-container'>
+<view class='info-container info-conts'>
+<!-- 血压监测 -->
   <view class='info-cont'>
-    <text>高压</text>
-    <input bindinput='onHighpressureTap' class="name" name="name" placeholder="请输入高压" />
-    <text>低压</text>
-    <input bindinput='onLowpressureTap' class="name" name="phone" placeholder="请输入低压" />
+    <view class='blood-tit'>请输入血压监测结果</view>
+    <text>收缩压</text>
+    <input bindinput='onHighpressureTap' class="name" name="name" placeholder="请输入收缩压" />
+    <text>舒张压</text>
+    <input bindinput='onLowpressureTap' class="name" name="phone" placeholder="请输入舒张压" />
+    <text>心率</text>
+    <input bindinput='onLowpressureTap' class="name" name="phone" placeholder="请输入心率" />
   </view>
+
+<!--血糖监测  -->
+<view class='info-cont border-none' style='display:none;'>
+    <view class='blood-tit'>请输入血糖监测结果</view>
+    <view class='parameter-wrap'>
+      <block wx:for="{{parameter}}" wx:key="parameter">
+      <text class='parameter-info text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.id}}' bindtap='parameterTap'>{{item.name}}</text>
+      </block>
+  </view>
+    <input bindinput='onLowpressureTap' class="name  hes" name="" placeholder="请输入血糖" />
+  </view>
+
+<!--尿检监测  -->
+<view class='info-cont border-none'>
+    <view class='blood-tit'>请输入尿检监测结果</view>
+    <view class='parameter-wrap'>
+      <block wx:for="{{parameter2}}" wx:key="parameter">
+      <text class='parameter-info text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.id}}' bindtap='parameterTap2'>{{item.name}}</text>
+      </block>
+  </view>
+  <view class='parameter-wrap up-height'>
+      <block wx:for="{{parameter3}}" wx:key="parameter">
+      <text class='parameter-info text-over {{item.checked?"checked_parameter":""}}' data-id='{{item.id}}' bindtap='parameterTap3'>{{item.name}}</text>
+      </block>
+  </view>
+    <input bindinput='onLowpressureTap' class="name  hes" name="" placeholder="请输入尿酸" />
+  </view>
+<!-- 总胆固醇 -->
+<view class='info-cont border-none'>
+    <view class='blood-tit'>请输入总胆固醇监测结果</view>
+    <input bindinput='onLowpressureTap' class="name  hes" name="" placeholder="请输入总胆固醇（请空腹12小时测量）" />
+  </view>
+
   <view class='preser-btn' bindtap='onServicelistTap'>提交结果</view>
 </view>

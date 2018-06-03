@@ -1,6 +1,6 @@
 <!--pages/friend-invit/friend-invit.wxml-->
-<view class='invit-contanier'>
-   <image src='/images/xy-icon.png' class='xy-icon'></image>
+<view class='invit-contanier' style="background-image: url('../../images/bg.png');background-size: 100%;">
+  <!-- <image src='/images/xy-icon.png' class='xy-icon'></image>
   <text class='blood-txt'>你测血压，我付钱!</text>
   <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供专项补贴</text>
   <view>
@@ -19,20 +19,43 @@
       <button wx:if="{{type}}" class='blood-btn' open-type="share">分享</button>
       <button wx:else class='blood-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">加入小组</button>
     </view>
-  </view> 
-<!-- <view class='invit-view'>
-  <image src='/images/xy-icon.png' class='xy-icon fr' ></image>
-  <view class='clear'></view>
-  <text class='blood-txt col-black'>你测血压，我付钱!</text>
-  <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供专项补贴</text>
+  </view>  -->
 
-  <view class='user-view'>
-    <view class='msg-bm'>
-      <image src='/images/center-icon4.png' class='head-pics'></image>
-      <text>阿拉斯加狄拉克\n
-      你和家人d额健康,我们共同关注</text>
+
+  <view class='invit-view'>
+    <image src='/images/logo-min.png' class='xy-icon fr'></image>
+    <view class='clear'></view>
+    <text class='blood-txt col-black'>你测血压，我付钱!</text>
+    <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供专项补贴</text>
+
+    <view class='user-view'>
+      <view class='user-views'>
+        <view class='msg-bm'>
+          <image src='{{invitInfo.avatar}}' class='head-pics'></image>
+          <view>
+            <text class='yq-text'>{{invitInfo.nickname}}</text>
+            <text>你和家人额健康,我们共同关注</text>
+          </view>
+        </view>
+
+        <view>
+          <text class='text-mid'>我已持续<text class='blood-col'>{{invitInfo.days}}</text>天坚持为家人和朋友监测血压已收入
+          <text class='blood-col'>{{invitInfo.income}}</text>元！</text>
+        </view>
+      </view>
     </view>
-  </view>
 
-</view> -->
+    <view class='join-view'>
+      <view class='join-text'>
+        <text class='yq-txt'>邀请你加入我的互助小组\n成为社工志愿者</text>
+        <button wx:if="{{type}}" open-type="share" class='jr-btns'>分享</button>
+        <button wx:else class='share' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">加入小组</button>
+      </view>
+      <view class='code-s'>
+        <image src='https://worker.coooolbreeze.com/api/invitation_codes/112' class='code-wd'></image>
+        <text>长按识别二维码</text>
+      </view>
+    </view>
+
+  </view>
 </view>
