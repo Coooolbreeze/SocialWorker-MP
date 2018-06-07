@@ -1,6 +1,5 @@
 Page({
   data: {
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
     inviter: null,
     funding: false
   },

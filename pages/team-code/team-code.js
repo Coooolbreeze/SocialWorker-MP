@@ -87,7 +87,6 @@ Page({
     wx.downloadFile({
       url: invitInfo.avatar,
       success: res => {
-        console.log(res)
         context.save()
         context.beginPath()
         // context.arc(375 * rpx, 500 * rpx, 100 * rpx, 0, 2 * Math.PI)

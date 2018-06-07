@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.8",
+	"libVersion": "2.0.9",
 	"appid": "wx87da90724237fd8f",
-	"projectname": "sgzj63",
+	"projectname": "sgzj64",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -139,7 +139,7 @@
 					"id": 17,
 					"name": "choose-service",
 					"pathName": "pages/choose-service/choose-service",
-					"query": "scene=1"
+					"query": "scene=304"
 				},
 				{
 					"id": -1,

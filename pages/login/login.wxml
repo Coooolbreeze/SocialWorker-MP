@@ -5,6 +5,5 @@
 <open-data type="userNickName" class="userName"></open-data> -->
 <image src='/images/xy-icon.png' class='logo-pic'></image>
 <!-- 需要使用 button 来授权登录 -->
-<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='login_btn'>授权登录</button>
-<view wx:else>请升级微信版本</view>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='login_btn'>授权登录</button>
 </view>

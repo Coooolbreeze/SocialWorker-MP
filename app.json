@@ -1,6 +1,8 @@
 {
   "pages": [
+   
     "pages/index/index",
+    "pages/personal-center/personal-center",
     "pages/personal-info/personal-info",
     "pages/blood-info/blood-info",
    
@@ -15,7 +17,7 @@
     "pages/public-list/public-list",
     "pages/selection-label/selection-label",
     "pages/team/team",
-    "pages/personal-center/personal-center",
+   
     "pages/friends-circle/friends-circle",
     "pages/login/login",
     "pages/device-management/device-management",

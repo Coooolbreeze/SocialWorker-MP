@@ -21,8 +21,12 @@
       分享到好友
       <image src='/images/line-ri.png'></image>
     </view>
-    <view class='share-quan' bindtap='onFriendshareTap'>
+    <!-- <view class='share-quan share-friend' bindtap='onFriendshareTap'>
       分享到朋友圈
+      <image src='/images/line-ri.png'></image>
+    </view> -->
+     <view class='share-quan' bindtap='onApplydevTap'>
+      申请设备
       <image src='/images/line-ri.png'></image>
     </view>
   </view>

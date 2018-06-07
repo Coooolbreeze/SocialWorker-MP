@@ -13,6 +13,7 @@
    align-items: center;
    border-bottom: 1px solid #b3b3b3;
    border-top: 1px solid #b3b3b3;
+   position: relative;
 }
 .center-text{
   font-size: 40rpx;
@@ -76,4 +77,25 @@ background: #fff;
   width: 60rpx;
   height: 60rpx;
   margin: 10rpx auto;
+}
+
+button::after{
+border: none;
+}
+.pho-btn{
+   width: 210rpx;
+  height: 66rpx;
+  line-height: 60rpx;
+  background: #fff7eb;
+  position: absolute;
+  right: -3%;
+  top: 42%; 
+  color: #f9a700;
+    border-radius: 30rpx;
+}
+.ri-icon{
+  width: 18rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
 }

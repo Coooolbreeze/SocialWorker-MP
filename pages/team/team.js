@@ -46,4 +46,10 @@ Page({
       url: '/pages/friend-list/friend-list?id=' + this.data.groupInfo.id,
     })
   },
+  //跳转设备申请
+  onApplydevTap:function(){
+    wx.navigateTo({
+      url: '../apply-equipment/apply-equipment',
+    })
+  }
 })

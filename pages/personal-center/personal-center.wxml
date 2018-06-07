@@ -5,19 +5,23 @@
       <open-data type="userAvatarUrl" class="avatarimg"></open-data>
     </view>
     <open-data type="userNickName" class="userName"></open-data>
+    <button wx:if="{{!isBindPhone}}" class='pho-btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+      <text>激活账户</text>
+      <image class='ri-icon' src='/images/ri-icon.jpg'></image>
+    </button>
   </view>
 
   <view class='center-mid'>
-    <view class='sociology'>
-      <image src='/images/center-icon1.png' bindtap='onSocialTap'></image>社工券
+    <view class='sociology' bindtap='onSocialTap'>
+      <image src='http://p9sctelqz.bkt.clouddn.com/center-icon1.png'></image>社工券
     </view>
     <view class='border-ri'></view>
     <view class='sociology' bindtap='onHealthTap'>
-      <image src='/images/center-icon3.png'></image>互助服务
+      <image src='http://p9sctelqz.bkt.clouddn.com/center-icon3.png'></image>互助服务
     </view>
     <view class='border-ri'></view>
     <view class='sociology' bindtap='onHealthasseTap'>
-      <image src='/images/center-icon2.png'></image>健康档案
+      <image src='http://p9sctelqz.bkt.clouddn.com/center-icon2.png'></image>健康档案
     </view>
   </view>
 

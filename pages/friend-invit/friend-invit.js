@@ -42,7 +42,8 @@ Page({
       success: res => {
         wx.setStorageSync('token', res.access_token)
         wx.switchTab({
-          url: '/pages/index/index'
+          // url: '/pages/index/index'
+          url:'/pages/social-work/social-work'
         })
       }
     })

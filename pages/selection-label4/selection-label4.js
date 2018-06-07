@@ -14,7 +14,6 @@ Page({
       { name: '经常熬夜', value: '5', checked: false },
       { name: '久坐', value: '6', checked: false },
       { name:'减肥' ,value:'7' ,checked:false},
-      { name: '自由职业', value: '8', checked: false },
     ],
   },
   serviceValChange: function (e) {

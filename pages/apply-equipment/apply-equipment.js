@@ -32,19 +32,19 @@ Page({
       this.setData({ allGoodsFilte: res })
       for (let i in this.data.allGoodsFilte) {
         if (this.data.allGoodsFilte[i].id == 1) {
-          this.data.allGoodsFilte[i].images = '/images/sb-pic05.png';
+          this.data.allGoodsFilte[i].images = 'http://p9sctelqz.bkt.clouddn.com/sb-pic05.png';
         }
         if (this.data.allGoodsFilte[i].id == 2) {
-          this.data.allGoodsFilte[i].images = '/images/sb-pic01.png';
+          this.data.allGoodsFilte[i].images = 'http://p9sctelqz.bkt.clouddn.com/sb-pic01.png';
         }
         if (this.data.allGoodsFilte[i].id == 3) {
-          this.data.allGoodsFilte[i].images = '/images/sb-pic02.png';
+          this.data.allGoodsFilte[i].images = 'http://p9sctelqz.bkt.clouddn.com/sb-pic02.png';
         }
         if (this.data.allGoodsFilte[i].id == 4) {
-          this.data.allGoodsFilte[i].images = '/images/sb-pic03.png';
+          this.data.allGoodsFilte[i].images = 'http://p9sctelqz.bkt.clouddn.com/sb-pic03.png';
         }
         if (this.data.allGoodsFilte[i].id == 5) {
-          this.data.allGoodsFilte[i].images = '/images/sb-pic04.png';
+          this.data.allGoodsFilte[i].images = 'http://p9sctelqz.bkt.clouddn.com/sb-pic04.png';
         }
       }
       this.setData({

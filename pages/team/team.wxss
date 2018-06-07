@@ -7,7 +7,7 @@
 
 .team-view {
   width: 100%;
-  height: 366rpx;
+  height: 390rpx;
   text-align: center;
   border-top: 1px solid #b3b3b3;
   margin-bottom: 20rpx;
