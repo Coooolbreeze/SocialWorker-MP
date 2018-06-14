@@ -158,3 +158,12 @@ page{
   flex-direction: row;
   justify-content: space-between
 }
+
+.ec-wrapper {
+  width: 100%;
+  height: 300px;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}

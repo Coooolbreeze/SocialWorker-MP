@@ -1,27 +1,27 @@
 <!--pages/health-assess/health-assess.wxml-->
 <view class='assess-cont'>
    <scroll-view class='health-view'>
-    <text class='ass-title'>健康状态风险评估：<text class='ass-col'>健康度80%</text></text>
-    <image src='/images/assess-icon.jpg' class='assess-icon'></image>
-    <view class='assess-view'>
-      <text class='assess-view-tit'>结果说明:</text> 调整好自己的生活习惯，比如少喝咖啡、多吃点水果、少吃油腻和太咸的菜、少抽烟、少喝酒、走路和开车都不要太快
+    <text class='ass-title'>健康状态风险评估：<text class='ass-col'>健康度{{percent}}</text></text>
+    <view class="ec-wrapper">
+      <ec-canvas id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec }}"></ec-canvas>
     </view>
-  </scroll-view> 
-
-
-  <view class='labels' bindtap='onselectlabelTap'>个人病史
+    <view class='assess-view'>
+      <text class='assess-view-tit'>结果说明:</text>{{desc}}
+    </view>
+  </scroll-view>
+  <view class='labels' bindtap='onSelectHealthLabel' data-type="1">个人病史
     <image src='/images/line-ri.png' class='line-ri'></image>
   </view>
-  <view class='labels' bindtap='onselectlabelTap5'>日常体征
+  <view class='labels' bindtap='onSelectHealthLabel' data-type="5">日常体征
     <image src='/images/line-ri.png' class='line-ri'></image>
   </view>
-  <view class='labels' bindtap='onselectlabelTap4'>生活状态
+  <view class='labels' bindtap='onSelectHealthLabel' data-type="4">生活状态
     <image src='/images/line-ri.png' class='line-ri'></image>
   </view>
-  <view class='labels' bindtap='onselectlabelTap3'>家族遗传
+  <view class='labels' bindtap='onSelectHealthLabel' data-type="3">家族遗传
     <image src='/images/line-ri.png' class='line-ri'></image>
   </view>  
-  <view class='labels' bindtap='onselectlabelTap2'>从事职业
+  <view class='labels' bindtap='onSelectHealthLabel' data-type="2">从事职业
     <image src='/images/line-ri.png' class='line-ri'></image>
   </view>
 </view>

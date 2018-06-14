@@ -46,6 +46,7 @@
     "pages/friend-list/friend-list",
     "pages/group-desc/group-desc",
     "pages/health-assess/health-assess",
+    "pages/health-label/health-label",
     "pages/service-list/service-list",
     "pages/health-records/health-records",
     "pages/health-center/health-center"

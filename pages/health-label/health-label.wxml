@@ -1,0 +1,28 @@
+<!--pages/health-label/health-label.wxml-->
+<view class='selection-view'>
+    <block wx:if="{{isMultiple}}">
+      <checkbox-group bindchange="labelChange">
+          <view class="service_selection flex">
+              <block wx:key="{{item.id}}" wx:for="{{labels}}">
+                  <view class="item">
+                      <label class="checkbox {{item.checked ? 'is_checked' : ''}}">
+                          <checkbox value="{{item.id}}" checked="{{item.checked}}" hidden="false" />{{item.name}}</label>
+                  </view>
+              </block>
+          </view>
+      </checkbox-group>
+    </block>
+    <block wx:else>
+      <radio-group bindchange="labelChange">
+          <view class="service_selection flex">
+              <block wx:key="{{item.id}}" wx:for="{{labels}}">
+                  <view class="item">
+                      <label class="checkbox {{item.checked ? 'is_checked' : ''}}">
+                          <radio value="{{item.id}}" checked="{{item.checked}}" hidden="false" />{{item.name}}</label>
+                  </view>
+              </block>
+          </view>
+      </radio-group>
+    </block>
+</view>
+<button class='select-btn' bindtap='onSave'>保存</button>
