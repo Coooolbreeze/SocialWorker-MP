@@ -6,7 +6,7 @@
       <text class='record-name'>{{info.name === '-' ? info.nickname : info.name}}</text>
       <image wx:if='{{info.sex !== "未知"}}' src='/images/man.jpg' class='man-icon'></image>
       <!-- <text class='old'>23岁</text> -->
-      <view class='view-btn'>加班熬夜</view>
+      <!-- <view class='view-btn'>加班熬夜</view> -->
     </view>
     <image src='/images/line-ri.png' class='line-ri'></image>
   </view>

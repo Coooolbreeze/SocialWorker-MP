@@ -17,10 +17,8 @@ Page({
     province: "",
     citys: [],
     city: "",
-    countys: [],
-    county: '',
-    value: [0, 0, 0],
-    values: [0, 0, 0],
+    value: [0, 0],
+    values: [0, 0],
     condition: false,
     pic_array: [
       { id: 1, name: '大中专以下' },
@@ -40,7 +38,7 @@ Page({
       { name: '2', value: '女' },
     ],
     allGoodsFilte: [
-      { name: '特定病症治疗', value: '0', checked: true },
+      { name: '特定病症治疗', value: '0', checked: false },
       { name: '科学养生', value: '1', checked: false },
       { name: '中药验方', value: '2', checked: false },
       { name: '术后康复', value: '3', checked: false },
@@ -48,7 +46,7 @@ Page({
       { name: '特色旅居', value: '5', checked: false },
       { name: '保健食品', value: '6', checked: false },
       { name: '文化娱乐', value: '7', checked: false },
-    ],  
+    ]
   },
   radioChange: function (e) {
     this.setData({ sex: e.detail.value })
@@ -71,48 +69,38 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let wants = options.wants.split(',')
+    this.data.allGoodsFilte.map(val => this.inArray(val.name, wants) && (val.checked = true))
+
     this.setData({
       name: options.name === '-' ? null : options.name,
       phone: options.phone === '-' ? null : options.phone,
       education: options.education ? options.education : null,
       age: options.age ? options.age : null,
-      sex: options.sex === '男' ? 1 : 2
+      sex: options.sex === '男' ? 1 : 2,
+      allGoodsFilte: this.data.allGoodsFilte
     })
 
-    console.log("onLoad");
-    var that = this;
+    tcity.init(this);
 
-    tcity.init(that);
-
-    var cityData = that.data.cityData;
-
+    var cityData = this.data.cityData;
 
     const provinces = [];
     const citys = [];
-    const countys = [];
 
     for (let i = 0; i < cityData.length; i++) {
       provinces.push(cityData[i].name);
     }
-    console.log('省份完成');
     for (let i = 0; i < cityData[0].sub.length; i++) {
       citys.push(cityData[0].sub[i].name)
     }
-    console.log('city完成');
-    for (let i = 0; i < cityData[0].sub[0].sub.length; i++) {
-      countys.push(cityData[0].sub[0].sub[i].name)
-    }
 
-    that.setData({
+    this.setData({
       'provinces': provinces,
       'citys': citys,
-      'countys': countys,
-      'province': cityData[0].name,
-      'city': cityData[0].sub[0].name,
-      'county': cityData[0].sub[0].sub[0].name
+      'province': options.province,
+      'city': options.city,
     })
-    console.log('初始化完成');
-
   },
 
   onNameInput: function (e) {
@@ -129,64 +117,44 @@ Page({
     let sex = this.data.sex;
     let education = this.data.education;
     let age = this.data.age;
+    let province = this.data.province;
+    let city = this.data.city;
+    let wants = [];
+    this.data.allGoodsFilte.map(val => val.checked && wants.push(val.name))
+    wants = wants.join(',')
     // 验证name phone
 
 
-    healthRecords.updateMyInfo({ name, phone, sex, education, age }, res => { wx.navigateBack() })
+    healthRecords.updateMyInfo({ name, phone, sex, education, age, province, city, wants }, res => { wx.navigateBack() })
   },
   // 省市选择
   bindChange: function (e) {
-    //console.log(e);
     var val = e.detail.value
     var t = this.data.values;
     var cityData = this.data.cityData;
 
     if (val[0] != t[0]) {
-      console.log('province no ');
       const citys = [];
-      const countys = [];
 
       for (let i = 0; i < cityData[val[0]].sub.length; i++) {
         citys.push(cityData[val[0]].sub[i].name)
-      }
-      for (let i = 0; i < cityData[val[0]].sub[0].sub.length; i++) {
-        countys.push(cityData[val[0]].sub[0].sub[i].name)
       }
 
       this.setData({
         province: this.data.provinces[val[0]],
         city: cityData[val[0]].sub[0].name,
         citys: citys,
-        county: cityData[val[0]].sub[0].sub[0].name,
-        countys: countys,
         values: val,
-        value: [val[0], 0, 0]
+        value: [val[0], 0]
       })
 
       return;
     }
     if (val[1] != t[1]) {
-      console.log('city no');
-      const countys = [];
-
-      for (let i = 0; i < cityData[val[0]].sub[val[1]].sub.length; i++) {
-        countys.push(cityData[val[0]].sub[val[1]].sub[i].name)
-      }
-
       this.setData({
         city: this.data.citys[val[1]],
-        county: cityData[val[0]].sub[val[1]].sub[0].name,
-        countys: countys,
         values: val,
-        value: [val[0], val[1], 0]
-      })
-      return;
-    }
-    if (val[2] != t[2]) {
-      console.log('county no');
-      this.setData({
-        county: this.data.countys[val[2]],
-        values: val
+        value: [val[0], val[1]]
       })
       return;
     }
@@ -196,7 +164,7 @@ Page({
       condition: !this.data.condition
     })
   },
-//维度多选
+  //维度多选
   serviceValChange: function (e) {
     var allGoodsFilte = this.data.allGoodsFilte;
     var checkArr = e.detail.value;
@@ -212,4 +180,10 @@ Page({
     })
   },
 
+  inArray: function (value, array) {
+    for (let item in array) {
+      if (value == array[item]) return true
+    }
+    return false
+  }
 })
