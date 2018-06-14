@@ -28,15 +28,15 @@ Page({
     })
   },
   onShow: function () {
-    this.modalcnt();
+    // this.modalcnt();
   },
   //弹出层函数
-  modalcnt: function () {
-    wx.showToast({
-      title: '健康小店尚未开通',
-      icon: 'none'
-    })
-  },
+  // modalcnt: function () {
+  //   wx.showToast({
+  //     title: '健康小店尚未开通',
+  //     icon: 'none'
+  //   })
+  // },
   //弹出层函数
   //出现
   shows: function () {

@@ -36,3 +36,9 @@
   margin-top: 30rpx;
 
 }
+.view_show{
+  display: block;
+}
+.view_hide{
+  display: none;
+}

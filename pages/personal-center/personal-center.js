@@ -15,7 +15,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.isBindPhone()
+    this.isBindPhone();
+    
   },
 
   onHealthTap: function (event) {
@@ -30,11 +31,11 @@ Page({
   },
   //跳转健康档案
   onHealthasseTap: function (event) {
-    wx.showToast({
-      title: '暂未开放',
-      icon: 'none'
-    })
-    return
+    // wx.showToast({
+    //   title: '暂未开放',
+    //   icon: 'none'
+    // })
+    // return
     wx.navigateTo({
       url: '../health-assess/health-assess',
     })

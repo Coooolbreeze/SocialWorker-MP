@@ -150,7 +150,7 @@ color: red;
 }
 .join-view{
   width: 566rpx;
-  height:240rpx;
+  height:320rpx;
   border-radius: 30rpx;
   margin: 80rpx auto;
   background: #fff;
@@ -163,7 +163,7 @@ color: red;
   text-align: left;
   display: block;
   line-height: 50rpx;
-  font-size: 32rpx;
+  font-size: 28rpx;
   margin-top: 20rpx;
 }
 .join-text{

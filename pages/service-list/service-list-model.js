@@ -21,7 +21,7 @@ class ServiceList extends Base {
     }
     this.request(params)
   }
-
+//提交结果的
   entryResults(id, results, callack) {
     let params = {
       url: '/service_orders/' + id,

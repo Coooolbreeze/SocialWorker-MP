@@ -26,7 +26,7 @@
     <image src='/images/logo-min.png' class='xy-icon fr'></image>
     <view class='clear'></view>
     <text class='blood-txt col-black'>你测血压，我付钱!</text>
-    <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供专项补贴</text>
+    <text class='blood-txt2'>送你29元红包，邀请你加入我的互助小组！</text>
 
     <view class='user-view'>
       <view class='user-views'>
@@ -34,19 +34,20 @@
           <image src='{{invitInfo.avatar}}' class='head-pics'></image>
           <view>
             <text class='yq-text'>{{invitInfo.nickname}}</text>
-            <text>你和家人额健康,我们共同关注</text>
+            <text>你和家人的健康,我们共同关注</text>
           </view>
         </view>
 
         <view>
-          <text class='text-mid'>我已持续<text class='blood-col'>{{invitInfo.days}}</text>天坚持为家人和朋友监测血压已收入<text class='blood-col'>{{invitInfo.income}}</text>元！</text>
+          <text class='text-mid'>我已持续<text class='blood-col'>{{invitInfo.days}}</text>天，提醒家人和朋友关注健康
+收入<text class='blood-col'>{{invitInfo.income}}</text>元！</text>
         </view>
       </view>
     </view>
 
     <view class='join-view'>
       <view class='join-text'>
-        <text class='yq-txt'>邀请你加入我的互助小组\n成为社工志愿者</text>
+        <text class='yq-txt'>天天关爱互助健康行动为每位关爱自身、服务他人的用户提供互助补贴；你和家人的健康，我们共同关注</text>
         <button wx:if="{{type}}" open-type="share" class='jr-btns'>分享</button>
         <button wx:else class='share jr-btns' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">加入小组</button>
       </view>

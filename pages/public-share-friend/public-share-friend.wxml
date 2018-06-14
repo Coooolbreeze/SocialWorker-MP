@@ -2,8 +2,7 @@
 <view class='invit-contanier'>
   <image src='/images/xy-icon.png' class='xy-icon'></image>
   <text class='blood-txt'>你测血压，我付钱!</text>
-  <text class='blood-txt2'>天天血压”公益行动将为每一个领取智能血压计
-成功上传数据的用户每天补贴1元钱！</text>
+  <text class='blood-txt2'>天天关爱互助健康行动为每位关爱自身、\n服务他人的用户提供互助补贴</text>
   <view>
     <view class='blood-view blood-view2 blood-view3'>
       <view>
@@ -14,10 +13,10 @@
       </view>
       <view class='line-b'></view>
       <text class='blood-txt3'>
-我已申请加入“天天血压”公益行动
-领取智能血压计，为健康代言
-承诺为家人和朋友监测血压动态数据
-邀请你为我担保
+我已申请加入“天天关爱”互助健康行动
+领取健康服务工具包，为健康代言
+承诺为家人和亲友定期做健康监测
+邀请你来为我担保
 你和家人的健康，我们共同关注
 </text>
     </view>

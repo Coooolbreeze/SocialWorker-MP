@@ -43,7 +43,7 @@ Page({
         wx.setStorageSync('token', res.access_token)
         wx.switchTab({
           // url: '/pages/index/index'
-          url:'/pages/social-work/social-work'
+          url:'/pages/personal-center/personal-center'
         })
       }
     })

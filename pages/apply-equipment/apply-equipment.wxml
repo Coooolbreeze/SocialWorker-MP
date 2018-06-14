@@ -1,5 +1,5 @@
 <!--pages/apply-equipment/apply-equipment.wxml-->
-<view class='container'>
+<view class='container cont-bg'>
   <!-- <checkbox-group bindchange="serviceValChange">
     <view class="service_selection flex">
       <block wx:for="{{allGoodsFilte}}" wx:key="{{item.id}}">
@@ -15,8 +15,7 @@
   </checkbox-group> -->
 
 
-
-  <checkbox-group bindchange="serviceValChange">
+<!-- <checkbox-group bindchange="serviceValChange">
     <view class="service_selection flex">
       <block wx:for="{{allGoodsFilte}}" wx:key="{{item.id}}">
         <view class="item">
@@ -31,9 +30,48 @@
         </view>
       </block>
     </view>
-  </checkbox-group>
-  <view class='apply-bottom'>
+  </checkbox-group> -->
+   
+  <!-- <view class='apply-bottom'>
     <view class='zc-btn' bindtap='onPublicpayTap'>众筹保证金</view>
     <view class='pay-btn' bindtap='onPayTap'>支付保证金</view>
+  </view>  -->
+  <view class='bg-col'>
+    <image src='/images/apply-bg.png' class='bg-pics'></image>
   </view>
+
+
+
+<checkbox-group bindchange="serviceValChange" style='display:none'>
+    <view class="service_selection flex">
+      <block wx:for="{{allGoodsFilte}}" wx:key="{{item.id}}">
+        <view class="item">
+          <label class="checkbox {{item.checked?'is_checked':''}}">
+            <checkbox value="{{item.id}}" checked="{{item.checked}}" hidden="false" />
+            <!-- <image src=' {{item.images}}' class='sb-pic01'></image> -->
+            <text class='sb-name'>{{item.name}}</text>
+          </label>
+          <!-- <view class='name-txt'>
+           {{item.name}} <text class='red-col'>{{item.price}}</text>元
+          </view> -->
+        </view>
+      </block>
+    </view>
+  </checkbox-group>
+<view class='apply-txt'>
+  <button>关爱爸妈从健康开始</button>
+  <text>健康自测，居家常备,子女安心</text>
+  <button>会员权益</button>
+ <text>301、阜外心脑血管专家科学养生指导\n365天健康互助现金补贴：1天\n亲友互助j健康建档现金补贴:1份\n120院前急救现金补贴:999元/卡\n终止服务，保证金可返还</text>
+ <text class='tit-col'>关注"<text class='sg-tit'>社工之家</text>"公众号,了解更多福利详情</text>
+</view>
+
+
+<view class='bot'>
+  <view class='apply-bt1'>￥<text class='font-big'>365</text></view>
+  <!-- <view class='apply-bt2' bindtap='onPublicpayTap'>好友众筹</view> -->
+  <view class='apply-bt3' bindtap='onPayTap'>支付保证金</view>
+</view>
+
+
 </view>

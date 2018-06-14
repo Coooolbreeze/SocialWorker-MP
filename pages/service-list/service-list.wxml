@@ -24,7 +24,7 @@
             <text>{{item.detection_result}}</text>
           </view>
           <button wx:if="{{item.status == '现金支付'}}" class='service-btn' data-id="{{item.id}}" bindtap='onSureTap'>确认收款</button>
-          <button wx:if="{{item.status == '已收款'}}" class='service-btn' data-id="{{item.id}}" bindtap='onBloodTap'>录入结果</button>
+          <button wx:if="{{item.status == '已收款'}}" class='service-btn' data-id="{{item.id}}" bindtap='onBloodTap' data-name="{{item.service.name}}">录入结果</button>
         </view>
       </view>
     </block>

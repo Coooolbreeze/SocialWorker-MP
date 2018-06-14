@@ -18,10 +18,10 @@
     <image src='/images/line-ri.png' class='line-ri'></image>
     <view class='clear'></view>
   </view>
-  <view class='help' bindtap='onAppleequipmentTap'>众筹列表
+  <!-- <view class='help' bindtap='onAppleequipmentTap'>众筹列表
     <image src='/images/line-ri.png' class='line-ri'></image>
     <view class='clear'></view>
-  </view>
+  </view> -->
   <!--弹窗  -->
   <view class="modal-box" hidden="{{flag}}" bindtap="hide">
     <view class="modal-body">

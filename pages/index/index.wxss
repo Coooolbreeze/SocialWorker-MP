@@ -1,5 +1,4 @@
 /**index.wxss**/
-
 .index-container{
   display: flex;
   flex-direction: row;
@@ -188,4 +187,9 @@ text-align:center;
   text-align: center;
   display: block;
   margin: 50rpx auto;
+}
+
+.bg-wd{
+  width: 100%;
+  height: 2500rpx;
 }

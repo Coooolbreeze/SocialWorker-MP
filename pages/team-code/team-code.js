@@ -46,9 +46,9 @@ Page({
 
     context.font = 'normal normal ' + 28 * rpx + 'px sans-serif'
     context.setFillStyle('#666666')
-    context.fillText('天天关爱互助健康行动为每位关爱自身、', 375 * rpx, 380 * rpx)
+    context.fillText('送你29元红包，', 375 * rpx, 380 * rpx)
 
-    context.fillText('服务他人的用户提供专项补贴', 375 * rpx, 420 * rpx)
+    context.fillText('邀请你加入我的互助小组！', 375 * rpx, 420 * rpx)
 
     context.beginPath()
     context.setLineWidth(0.3)
@@ -70,9 +70,9 @@ Page({
 
     context.fillText('我已持续' + invitInfo.days + '天', 375 * rpx, 740 * rpx)
     context.fillText('提醒家人和朋友关注健康', 375 * rpx, 780 * rpx)
-    context.fillText('收入' + invitInfo.income + '元!', 375 * rpx, 820 * rpx)
-    context.fillText('邀请你加入我的互助小组', 375 * rpx, 860 * rpx)
-    context.fillText('你和家人的健康，我们共同关注', 375 * rpx, 900 * rpx)
+    context.fillText('收入' + invitInfo.income + '元天天关爱互助健康行动!', 375 * rpx, 820 * rpx)
+    context.fillText('为每位关爱自身、服务他人的用户提供', 375 * rpx, 860 * rpx)
+    context.fillText('互助补贴你和家人的健康，我们共同关注', 375 * rpx, 900 * rpx)
 
     context.setFontSize(35 * rpx)
     context.setFillStyle('#000000')
