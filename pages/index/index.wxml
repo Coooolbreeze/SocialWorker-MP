@@ -72,7 +72,5 @@
 <text class='text-mid'>您的健康小店正在装修中</text>
 </view> -->
 <view>
-<image src='http://p9sctelqz.bkt.clouddn.com/index-b.png' class='bg-wd'></image>
+  <image src='http://p9sctelqz.bkt.clouddn.com/index-b.png' class='bg-wd'></image>
 </view>
-
-

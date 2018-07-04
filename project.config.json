@@ -8,7 +8,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.9",
+	"libVersion": "2.1.1",
 	"appid": "wx87da90724237fd8f",
 	"projectname": "sgzj67",
 	"isGameTourist": false,
@@ -139,7 +139,7 @@
 					"id": 17,
 					"name": "choose-service",
 					"pathName": "pages/choose-service/choose-service",
-					"query": "scene=304"
+					"query": "scene=1"
 				},
 				{
 					"id": -1,
@@ -157,6 +157,12 @@
 					"id": -1,
 					"name": "health-assess",
 					"pathName": "pages/health-assess/health-assess",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
 					"query": ""
 				}
 			]

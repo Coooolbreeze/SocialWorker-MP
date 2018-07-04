@@ -4,7 +4,8 @@ class Config {
   }
 }
 
-Config.restUrl = 'https://worker.coooolbreeze.com/api'
-// Config.restUrl = 'http://worker.test/api'
+// Config.restUrl = 'https://m.yootal.com/api'
+// Config.restUrl = 'https://worker.coooolbreeze.com/api'
+Config.restUrl = 'http://worker.test/api'
 
 export { Config }

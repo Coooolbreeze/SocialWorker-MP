@@ -98,7 +98,11 @@ Page({
         cash: true
       }, res => {
         wx.hideLoading()
-        wx.showModal({ title: '提交成功' })
+        wx.showModal({
+          title: '提交成功',
+          showCancel: false,
+          success: res => wx.switchTab({url: '/pages/personal-center/personal-center'})
+        })
       })
     })
   },

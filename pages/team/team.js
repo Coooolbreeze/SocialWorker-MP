@@ -20,6 +20,17 @@ Page({
     })
   },
 
+  onPullDownRefresh: function () {
+    wx.showNavigationBarLoading()
+    team.getGroup(res => {
+      this.setData({
+        groupInfo: res[0]
+      })
+      wx.stopPullDownRefresh()
+      wx.hideNavigationBarLoading()
+    })
+  },
+
   //跳转到小组列表
   onGroupTap: function () {
     wx.navigateTo({
@@ -47,7 +58,7 @@ Page({
     })
   },
   //跳转设备申请
-  onApplydevTap:function(){
+  onApplydevTap: function () {
     wx.navigateTo({
       url: '../apply-equipment/apply-equipment',
     })

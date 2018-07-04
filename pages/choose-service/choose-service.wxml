@@ -7,14 +7,14 @@
           <label class="checkbox {{item.checked?'is_checked':''}}">
             <radio value="{{item.id}}" checked="{{item.checked}}" hidden="false" />
             <view class="title">{{item.name}}</view>
-            <view class='price'>￥{{item.price}}</view>
+            <!-- <view class='price'>￥{{item.price}}</view> -->
           </label>
         </view>
       </block>
     </view>
   </radio-group>
   <view class='apply-bottom'>
-    <button open-type='getUserInfo' bindgetuserinfo='wxPay' class='zc-btn'>微信支付</button>
-    <button open-type='getUserInfo' bindgetuserinfo='cash' class='pay-btn'>现金支付</button>
+    <!-- <button open-type='getUserInfo' bindgetuserinfo='wxPay' class='zc-btn'>微信支付</button> -->
+    <button open-type='getUserInfo' bindgetuserinfo='cash' style='width:100%' class='pay-btn'>确定</button>
   </view>
 </view>

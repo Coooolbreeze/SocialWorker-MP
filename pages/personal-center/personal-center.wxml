@@ -19,10 +19,10 @@
     <view class='sociology' bindtap='onHealthTap'>
       <image src='http://p9sctelqz.bkt.clouddn.com/center-icon3.png'></image>互助服务
     </view>
-      <view class='border-ri'></view> 
-     <view class='sociology' bindtap='onHealthasseTap'>
+    <!-- <view class='border-ri'></view>
+    <view class='sociology' bindtap='onHealthasseTap'>
       <image src='http://p9sctelqz.bkt.clouddn.com/center-icon2.png'></image>健康档案
-    </view>  
+    </view> -->
   </view>
 
   <view class='help' bindtap='onHelpTap'>帮助中心

@@ -59,9 +59,9 @@ Page({
       return
     }
 
-    if (this.data.count < 100) {
+    if (this.data.count < 1) {
       wx.showToast({
-        title: '最少100',
+        title: '最少1',
         icon: 'none'
       })
       return

@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "互助小组"
+  "navigationBarTitleText": "互助小组",
+  "enablePullDownRefresh": true
 }
