@@ -1,25 +1,20 @@
 {
   "pages": [
-
     "pages/index/index",
-      "pages/personal-center/personal-center",
+    "pages/personal-center/personal-center",
     "pages/apply-equipment/apply-equipment",
-    
     "pages/personal-info/personal-info",
     "pages/blood-info/blood-info",
-   
     "pages/choose-service/choose-service",
     "pages/friend-invit/friend-invit",
     "pages/selection-label5/selection-label5",
     "pages/selection-label4/selection-label4",
     "pages/selection-label3/selection-label3",
     "pages/selection-label2/selection-label2",
-
     "pages/confirm-apply/confirm-apply",
     "pages/public-list/public-list",
     "pages/selection-label/selection-label",
     "pages/team/team",
-   
     "pages/friends-circle/friends-circle",
     "pages/login/login",
     "pages/device-management/device-management",
@@ -36,7 +31,6 @@
     "pages/help-center/help-center",
     "pages/apply-present/apply-present",
     "pages/present-receipt/present-receipt",
-   
     "pages/apply-receipt/apply-receipt",
     "pages/guarantee-index/guarantee-index",
     "pages/about/about",
@@ -49,7 +43,8 @@
     "pages/health-label/health-label",
     "pages/service-list/service-list",
     "pages/health-records/health-records",
-    "pages/health-center/health-center"
+    "pages/health-center/health-center",
+    "pages/error/error"
   ],
   "window": {
     "backgroundTextStyle": "light",

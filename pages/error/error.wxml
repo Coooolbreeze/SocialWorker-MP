@@ -1,0 +1,6 @@
+<!--pages/error/error.wxml-->
+<view style='display:flex;flex-direction:column'>
+  <text style='color:red;font-size:20px'>登录失败,请点击右上角菜单->关于天天血压->相关公众号，将错误信息截图发送至公众号，谢谢！</text>
+  <text>错误码：{{code}}</text>
+  <text>错误信息：{{error}}</text>
+</view>

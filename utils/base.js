@@ -17,7 +17,7 @@ class Base {
       success: res => {
         if (Math.floor(res.statusCode / 100) != 2) {
           console.log(res.data)
-          params.fail && params.fail(res.data)
+          params.fail && params.fail(res)
         }
         else {
           params.success && params.success(res.data)
